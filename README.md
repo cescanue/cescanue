@@ -49,6 +49,18 @@ I'm **Carlos Escañuela García**, currently serving as **VP of Service Design A
 
 ---
 
+## 🎓 Certifications & Achievements
+
+- **Extensive Professional Accreditations**: Recognized for advanced competencies in IT systems management, network administration, cybersecurity, software development, and technical support.
+- **Expertise in IT Systems and Network Security**: Accredited at advanced and intermediate levels, demonstrating proficiency in securing and optimizing complex IT infrastructures.
+- **Advanced Software Development Skills**: Certified knowledge in various programming languages and frameworks, specializing in web and application development.
+- **Proven Excellence in Technical Support and Operations**: Accredited abilities in providing top-tier technical assistance and efficiently managing IT operations.
+- **Microsoft Certified Systems Engineer (MCSE)**
+- **AWS Certified Solutions Architect – Associate**
+- **42 Barcelona Common Core Completion**
+
+---
+
 ## 🚀 42 School Projects
 
 ### [tinky-winky](./tinky-winky)
@@ -114,18 +126,6 @@ A custom-built **C standard library** including optimized versions of common fun
 ### [born2beroot](./born2beroot)
 
 A **system administration** project configuring and securing a virtual machine with firewalls and monitoring tools.
-
----
-
-## 🎓 Certifications & Achievements
-
-- **Extensive Professional Accreditations**: Recognized for advanced competencies in IT systems management, network administration, cybersecurity, software development, and technical support.
-- **Expertise in IT Systems and Network Security**: Accredited at advanced and intermediate levels, demonstrating proficiency in securing and optimizing complex IT infrastructures.
-- **Advanced Software Development Skills**: Certified knowledge in various programming languages and frameworks, specializing in web and application development.
-- **Proven Excellence in Technical Support and Operations**: Accredited abilities in providing top-tier technical assistance and efficiently managing IT operations.
-- **Microsoft Certified Systems Engineer (MCSE)**
-- **AWS Certified Solutions Architect – Associate**
-- **42 Barcelona Common Core Completion**
 
 ---
 
