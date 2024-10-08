@@ -17,14 +17,6 @@ I'm **Carlos Escañuela García**, currently serving as **VP of Service Design A
 
 ## 🛠️ Tech Stack
 
-### 💻 Systems & Infrastructure
-
-- **IT Operations & Systems Management**: Over two decades managing mission-critical systems, ensuring service continuity and operational efficiency.
-- **Microsoft Operating Systems**: Expert in performance tuning, security hardening, and resource management for enterprise-level infrastructures.
-- **Team Leadership & Organizational Strategy**: Skilled in managing global teams and aligning technical solutions with business goals.
-- **Cloud & Virtualization**: Expertise in cloud infrastructure (**AWS**, **Azure**, **Google Cloud**, **VMware**) and virtualization technologies for scalability and optimized resource management.
-- **Network Administration**: Proficient in configuring and managing networks, ensuring security and efficiency across global infrastructures.
-
 ### 🔧 Programming & Development
 
 #### **Programming Languages**
@@ -42,6 +34,14 @@ I'm **Carlos Escañuela García**, currently serving as **VP of Service Design A
 | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white) ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white) ![SVN](https://img.shields.io/badge/Subversion-809CC9?style=flat&logo=subversion&logoColor=white) |
 | ![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat&logo=jenkins&logoColor=white) ![CI/CD](https://img.shields.io/badge/CI%2FCD-4285F4?style=flat&logo=google-cloud&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazon-aws&logoColor=white) ![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoft-azure&logoColor=white) ![Google Cloud](https://img.shields.io/badge/Google%20Cloud-4285F4?style=flat&logo=google-cloud&logoColor=white) ![VMware](https://img.shields.io/badge/VMware-607078?style=flat&logo=vmware&logoColor=white) |
 
+### 💻 Systems & Infrastructure
+
+- **IT Operations & Systems Management**: Over two decades managing mission-critical systems, ensuring service continuity and operational efficiency.
+- **Microsoft Operating Systems**: Expert in performance tuning, security hardening, and resource management for enterprise-level infrastructures.
+- **Team Leadership & Organizational Strategy**: Skilled in managing global teams and aligning technical solutions with business goals.
+- **Cloud & Virtualization**: Expertise in cloud infrastructure (**AWS**, **Azure**, **Google Cloud**, **VMware**) and virtualization technologies for scalability and optimized resource management.
+- **Network Administration**: Proficient in configuring and managing networks, ensuring security and efficiency across global infrastructures.
+  
 ### 🌐 Networking & Security
 
 - **Protocols & Configurations**: Expertise in TCP/IP, VPN, VLANs, and firewalls to ensure efficient and secure global networks.
