@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User and Game Stats Dashboards</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/static/assets/css/styles.css">
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0) !important;
+            color: white;
+            font-family: 'Press Start 2P';
+            font-size: 11px;
+            margin: 15px;
+        }
+        h3, h4 {
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table {
+            width: 90%;
+        }
+
+	.nav-item .nav-link {
+            color: white;
+        }
+        .nav-tabs .nav-item .nav-link:hover {
+            color: #4CAF50;
+        }
+
+	.card-img {
+		width: 150;
+		height: 150;
+	}
+
+	@media (max-width: 400px) {
+		.card-img {
+			width: 350;
+			height: 150;
+			}
+	}
+    </style>
+</head>
+<body id="statsContainer">
+    <h3>User and Game Stats Dashboards</h3>
+    <div class="card bg-dark text-white" style="max-width: 540px;">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="{{user_stats.avatar}}" class="card-img" alt="" onerror="this.onerror=null; this.src='/static/avatars/default.jpg'"/>
+            </div>
+            <div class="col-md-8 d-flex align-items-center">
+                <div class="card-body">
+                    <p class="card-text mb-0" style="color:white;">{{ user_stats.display_name }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <ul class="nav nav-tabs mt-4" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="player-stats-tab" data-toggle="tab" href="#player-stats" role="tab" aria-controls="player-stats" aria-selected="true"><i class="fas fa-user"></i> Player Stats</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="player-history-tab" data-toggle="tab" href="#player-history" role="tab" aria-controls="player-history" aria-selected="false"><i class="fas fa-history"></i> Player History</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="server-history-tab" data-toggle="tab" href="#server-history" role="tab" aria-controls="server-history" aria-selected="false"><i class="fas fa-server"></i> Server History</a>
+        </li>
+	 <li class="nav-item" role="presentation">
+            <a class="nav-link" id="server-history-tab" data-toggle="tab" href="#stats" role="tab" aria-controls="server-history" aria-selected="false"><i class="fas fa-chart-bar"></i> Player Graph</a>
+        </li>
+    </ul>
+    
+    <!-- Contenido de las pestañas -->
+    <div class="tab-content mt-3" id="myTabContent">
+        <div class="tab-pane fade show active" id="player-stats" role="tabpanel" aria-labelledby="player-stats-tab">
+            <h4>Player stats</h4>
+            <table class="table table-sm table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">vs CPU</th>
+                        <th scope="col">vs Human</th>
+                        <th scope="col">Overall</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Played matches</th>
+                        <td>{{ user_stats.matches_played_pvc }}</td>
+                        <td>{{ user_stats.matches_played_pvp }}</td>
+                        <td>{{ user_stats.matches_played }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Won matches</th>
+                        <td>{{ user_stats.matches_won_pvc }} ({{ user_stats.matches_won_pvc_ratio }}%)</td>
+                        <td>{{ user_stats.matches_won_pvp }} ({{ user_stats.matches_won_pvp_ratio }}%)</td>
+                        <td>{{ user_stats.matches_won }} ({{ user_stats.matches_won_ratio }}%)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Lost matches</th>
+                        <td>{{ user_stats.matches_lost_pvc }} ({{ user_stats.matches_lost_pvc_ratio }}%)</td>
+                        <td>{{ user_stats.matches_lost_pvp }} ({{ user_stats.matches_lost_pvp_ratio }}%)</td>
+                        <td>{{ user_stats.matches_lost }} ({{ user_stats.matches_lost_ratio }}%)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Goals scored per match</th>
+                        <td>{{ user_stats.scored_goals_per_match_pvc }}</td>
+                        <td>{{ user_stats.scored_goals_per_match_pvp }}</td>
+                        <td>{{ user_stats.scored_goals_per_match }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Goals received per match</th>
+                        <td>{{ user_stats.received_goals_per_match_pvc }}</td>
+                        <td>{{ user_stats.received_goals_per_match_pvp }}</td>
+                        <td>{{ user_stats.received_goals_per_match }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Direct goals scored per match</th>
+                        <td>{{ user_stats.scored_aces_per_match_pvc }}</td>
+                        <td>{{ user_stats.scored_aces_per_match_pvp }}</td>
+                        <td>{{ user_stats.scored_aces_per_match }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Direct goals received per match</th>
+                        <td>{{ user_stats.received_aces_per_match_pvc }}</td>
+                        <td>{{ user_stats.received_aces_per_match_pvp }}</td>
+                        <td>{{ user_stats.received_aces_per_match }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Shortest match</th>
+                        <td>{{ user_stats.shortest_match_pvc }} secs</td>
+                        <td>{{ user_stats.shortest_match_pvp }} secs</td>
+                        <td>{{ user_stats.shortest_match }} secs</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Longest match</th>
+                        <td>{{ user_stats.longest_match_pvc }} secs</td>
+                        <td>{{ user_stats.longest_match_pvp }} secs</td>
+                        <td>{{ user_stats.longest_match }} secs</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Played tournaments</th>
+                        <td> --- </td>
+                        <td> --- </td>
+                        <td>{{ user_stats.tournaments_played }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Won tournaments</th>
+                        <td> --- </td>
+                        <td> --- </td>
+                        <td>{{ user_stats.tournaments_won }} ({{ user_stats.tournaments_won_ratio }}%)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Lost tournaments</th>
+                        <td> --- </td>                        
+                        <td> --- </td>
+                        <td>{{ user_stats.tournaments_lost }} ({{ user_stats.tournaments_lost_ratio }}%)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <div class="tab-pane fade" id="player-history" role="tabpanel" aria-labelledby="player-history-tab">
+            <h4>Player gaming history</h4>
+            <table class="table table-sm table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">Game Date</th>
+                        <th scope="col">Player</th>
+                        <th scope="col">Score</th>
+                        <th scope="col">Opponent</th>                        
+                        <th scope="col">Match Length</th>
+                        <th scope="col">Tournament</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for match in player_game_history %}
+                    <tr>
+                        <td>{{ match.date }}</td>
+                        <td>
+                            <img src="{{match.player_avatar}}" width="25" height="25" alt="" onerror="this.onerror=null; this.src='/static/avatars/default.jpg'"/>
+                            {% if match.player_score > match.opponent_score %}
+                                <span style="color: green;">(W)</span>
+                            {% else %}
+                                <span style="color: red;">(L)</span>
+                            {% endif %}
+                            {{ match.player }}
+                        </td>
+                        <td>{{ match.player_score }} - {{ match.opponent_score }}</td>                        
+                        <td><img src="{{match.opponent_avatar}}" width="25" height="25" alt="" onerror="this.onerror=null; this.src='/static/avatars/default.jpg'"/>
+                            {% if match.player_score > match.opponent_score %}
+                                <span style="color: red;">(L)</span>
+                            {% else %}
+                                <span style="color: green;">(W)</span>
+                            {% endif %}
+                            {{ match.opponent }}
+                        </td>
+                        <td>{{ match.match_length }}</td>
+                        <td>{% if match.tournament %}<span style="color: green;">{{match.tournament_name}}</span>{% else %}<span style="color: red;">No</span>{% endif %}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="tab-pane fade" id="server-history" role="tabpanel" aria-labelledby="server-history-tab">
+            <h4>Server gaming history</h4>
+            <table class="table table-sm table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">Game Date</th>
+                        <th scope="col">Player 1</th>
+                        <th scope="col">Score</th>
+                        <th scope="col">Player 2</th>
+                        <th scope="col">Match Length</th>
+                        <th scope="col">Tournament</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for match in all_game_history %}
+                    <tr>
+                        <td>{{ match.date }}</td>
+                        <td>
+                            <img src="{{match.player_avatar}}" width="25" height="25" alt="" onerror="this.onerror=null; this.src='/static/avatars/default.jpg'"/>
+                            {% if match.player_score > match.opponent_score %}
+                                <span style="color: green;">(W)</span>
+                            {% else %}
+                                <span style="color: red;">(L)</span>
+                            {% endif %}
+                            {{ match.player }}
+                        </td>
+                        <td>{{ match.player_score }} - {{ match.opponent_score }}</td>
+                        <td><img src="{{match.opponent_avatar}}" width="25" height="25" alt="" onerror="this.onerror=null; this.src='/static/avatars/default.jpg'"/>
+                            {% if match.player_score > match.opponent_score %}
+                                <span style="color: red;">(L)</span>
+                            {% else %}
+                                <span style="color: green;">(W)</span>
+                            {% endif %}
+                            {{ match.opponent }}
+                        </td>                        
+                        <td>{{ match.match_length }}</td>                        
+                        <td>{% if match.tournament %}<span style="color: green;">{{match.tournament_name}}</span>{% else %}<span style="color: red;">No</span>{% endif %}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+<div class="tab-pane fade" id="stats" role="tabpanel" aria-labelledby="player-history-tab">
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-3 text-center">
+                <h5>Matches</h5>
+                <canvas id="matchesChart" style="width: 100px; height: 100px;"></canvas>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-3 text-center">
+                <h5>Tournaments</h5>
+                <canvas id="donutChart" style="width: 100px; height: 100px;"></canvas>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-8 mb-4 text-center">
+                <h5>Matches</h5>
+                <canvas id="matchesChart2"></canvas>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-8 mb-4 text-center">
+                <h5>Goals</h5>
+                <canvas id="goalsChart2"></canvas>
+            </div>
+	    <div class="col-lg-4 col-md-6 col-sm-8 mb-4 text-center">
+		    <h5>Duration</h5>
+		    <canvas id="matchDurationChart"></canvas>
+		</div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-8 mb-4 text-center">
+                <h5>User Statistics</h5>
+                <canvas id="userStatsChart"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const tournamentsWon = {{ user_stats.tournaments_won }};
+        const tournamentsLost = {{ user_stats.tournaments_lost }};
+
+        const allZero = (tournamentsWon === 0 && tournamentsLost === 0);
+
+        const emptyDonutColor = 'rgba(255, 255, 255, 0.5)';
+        const emptyDonutBorderColor = 'rgba(255, 255, 255, 1)';
+        const donutData = allZero ? [1] : [tournamentsWon, tournamentsLost];
+        const donutLabels = allZero ? ['No Tournaments yet'] : ['Won', 'Lost'];
+        const donutColors = allZero ? [emptyDonutColor] : ['#9966FF', '#FFCE56'];
+        const donutBorders = allZero ? [emptyDonutBorderColor] : ['#9966FF', '#FFCE56'];
+
+        const ctxDonut = document.getElementById('donutChart').getContext('2d');
+        const donutChart = new Chart(ctxDonut, {
+            type: 'doughnut',
+            data: {
+                labels: donutLabels,
+                datasets: [{
+                    data: donutData,
+                    backgroundColor: donutColors,
+                    borderColor: donutBorders,
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function (tooltipItem) {
+                                return tooltipItem.label + ': ' + tooltipItem.raw;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        var matchesPlayedPVC = {{ user_stats.matches_played_pvc }};
+        var matchesPlayedPVP = {{ user_stats.matches_played_pvp }};
+         
+        var matchesWonPVC = {{ user_stats.matches_won_pvc }};
+        var matchesWonPVP = {{ user_stats.matches_won_pvp }};
+         
+        var goalsScoredPVC = {{ user_stats.scored_goals_per_match_pvc }};
+        var goalsScoredPVP = {{ user_stats.scored_goals_per_match_pvp }};
+ 
+        const allMatchesZero = (matchesPlayedPVC === 0 && matchesPlayedPVP === 0 && 
+                                matchesWonPVC === 0 && matchesWonPVP === 0 &&
+                                goalsScoredPVC === 0 && goalsScoredPVP === 0);
+
+        // Gráfico de partidos jugados
+        var ctxMatches = document.getElementById('matchesChart').getContext('2d');
+        var matchesChart = new Chart(ctxMatches, {
+            type: 'doughnut',
+            data: {
+                labels: allMatchesZero ? ['No Matches yet'] : ['vs CPU', 'vs Human'],
+                datasets: [{
+                    data: allMatchesZero ? [1] : [matchesPlayedPVC, matchesPlayedPVP],
+                    backgroundColor: allMatchesZero ? [emptyDonutColor] : ['#4BC0C0', '#9966FF'],
+                    borderColor: allMatchesZero ? [emptyDonutBorderColor] : ['#4BC0C0', '#9966FF'],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function (tooltipItem) {
+                                return tooltipItem.label + ': ' + tooltipItem.raw;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+      
+        // Gráfico de partidos jugados
+        var ctx = document.getElementById('matchesChart2').getContext('2d');
+        var matchesChart2 = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['vs CPU', 'vs Human'],
+                datasets: [{
+                    label: 'Played matches',
+                    data: [matchesPlayedPVC, matchesPlayedPVP],
+                    backgroundColor: '#4BC0C0',
+                    borderColor: '#4BC0C0',
+                    borderWidth: 1
+                }, {
+                    label: 'Won matches',
+                    data: [matchesWonPVC, matchesWonPVP],
+                    backgroundColor: '#9966FF',
+                    borderColor: '#9966FF',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+	    var ctx2 = document.getElementById('goalsChart2').getContext('2d');
+        var goalsChart = new Chart(ctx2, {
+            type: 'bar',
+            data: {
+                labels: ['vs CPU', 'vs Human'],
+                datasets: [{
+                    label: 'Goals scored per match',
+                    data: [goalsScoredPVC, goalsScoredPVP],
+                    backgroundColor: '#FFCE56',
+                    borderColor: '#FFCE56',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+	    const ctx3 = document.getElementById('matchDurationChart').getContext('2d');
+        const matchDurationChart = new Chart(ctx3, {
+            type: 'bar',
+            data: {
+                labels: ['vs CPU', 'vs Human'],
+                datasets: [
+                    {
+                        label: 'Shortest Match (secs)',
+                        data: [{{ user_stats.shortest_match_pvc }}, {{ user_stats.shortest_match_pvp }}, {{ user_stats.shortest_match }}],
+			backgroundColor: '#4BC0C0',
+                        borderColor: '#4BC0C0',
+                        borderWidth: 2,
+                        fill: false
+                    },
+                    {
+                        label: 'Longest Match (secs)',
+                        data: [{{ user_stats.longest_match_pvc }}, {{ user_stats.longest_match_pvp }}, {{ user_stats.longest_match }}],
+			backgroundColor: '#FF9F40',
+                        borderColor: '#FF9F40',
+                        borderWidth: 2,
+                        fill: false
+                    }
+                ]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+
+        });
+        const ctx4 = document.getElementById('userStatsChart').getContext('2d');
+        const userStatsChart = new Chart(ctx4, {
+            type: 'bar',
+            data: {
+                labels: [
+                    'Played Matches PVC', 
+                    'Played Matches PVP', 
+                    'Won Matches PVC', 
+                    'Won Matches PVP', 
+                    'Lost Matches PVC', 
+                    'Lost Matches PVP', 
+                    'Played Tournaments',
+                    'Won Tournaments'
+                ],
+                datasets: [{
+                    data: [
+                        {{ user_stats.matches_played_pvc }},
+                        {{ user_stats.matches_played_pvp }},
+                        {{ user_stats.matches_won_pvc }},
+                        {{ user_stats.matches_won_pvp }},
+                        {{ user_stats.matches_lost_pvc }},
+                        {{ user_stats.matches_lost_pvp }},
+                        {{ user_stats.tournaments_played }},
+                        {{ user_stats.tournaments_won }}
+                    ],
+                    backgroundColor: [
+                        '#FF6384', '#36A2EB', '#FFCE56',
+                        '#4BC0C0', '#9966FF', '#FF9F40',
+                        '#FF6384', '#36A2EB'
+                    ]
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: false,
+                    },
+                    title: {
+                        display: false,
+                    }
+                }
+            },
+        });
+
+});
+</script>
+
+</body>
+</html>
+
+

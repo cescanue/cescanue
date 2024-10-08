@@ -1,0 +1,11 @@
+0.xpm
+1.xpm
+2.xpm
+3.xpm
+4.xpm
+5.xpm
+6.xpm
+7.xpm
+8.xpm
+9.xpm
+black.xpm

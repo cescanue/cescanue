@@ -1,0 +1,110 @@
+services:
+  nginx:
+    container_name: nginx
+    build: ./requirements/nginx
+    ports:
+      - "443:443"
+    volumes:
+      - data_wp:/var/www/html
+    restart: always
+    networks:
+      - nginxwp
+    depends_on:
+      - wordpress
+    env_file:
+      - .env
+    stdin_open: true 
+    tty: true
+  wordpress:
+    container_name: wordpress
+    build: ./requirements/wordpress
+    volumes:
+      - data_wp:/var/www/html
+    restart: always
+    networks:
+      - nginxwp
+      - wpdb
+    depends_on:
+      - mariadb
+      - redis
+    env_file:
+      - .env
+    stdin_open: true 
+    tty: true
+  mariadb:
+    container_name: mariadb
+    build: ./requirements/mariadb
+    volumes:
+      - data_db:/var/lib/mysql
+    restart: always
+    networks:
+      - wpdb
+    env_file:
+      - .env
+    stdin_open: true 
+    tty: true
+  redis:
+    container_name: redis
+    build: ./requirements/bonus/redis
+    restart: always
+    networks:
+      - wpdb
+    env_file:
+      - .env
+    stdin_open: true 
+    tty: true
+  ftpserver:
+    container_name: ftpserver
+    build: ./requirements/bonus/ftpserver
+    ports:
+      - "21:21"
+      - "21100-21110:21100-21110"
+    volumes:
+      - data_wp:/var/www/html
+    restart: always
+    env_file:
+      - .env
+    stdin_open: true 
+    tty: true
+  webserver:
+    container_name: website
+    build: ./requirements/bonus/website
+    ports:
+      - "80:80"
+    restart: always
+    stdin_open: true 
+    tty: true
+  cadvisor:
+    container_name: cadvisor
+    build: ./requirements/bonus/cadvisor
+    ports:
+      - "8080:8080"
+    volumes:
+      - /:/rootfs:ro
+      - /var/run/docker.sock:/var/run/docker.sock:rw
+      - /sys:/sys:ro 
+      - /var/lib/docker/:/var/lib/docker:ro
+    restart: always
+    stdin_open: true 
+    tty: true
+  
+volumes:
+  data_db:
+    driver: local
+    driver_opts:
+      type: none
+      device: ${HOME}/data/mysql
+      o: bind
+  data_wp:
+    driver: local
+    driver_opts:
+      type: none
+      device: ${HOME}/data/wordpress
+      o: bind
+
+networks:
+  nginxwp:
+    driver: bridge
+  wpdb:
+    driver: bridge
+  

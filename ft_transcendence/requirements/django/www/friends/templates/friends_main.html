@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/static/assets/fonts/fontawesome-all.min.css">
+    <title>Pong 42 friends</title>
+    <style>
+	@import "https://fonts.googleapis.com/css?family=Press%20Start%202P";
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+	    text-align: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000;
+            color: #FFD700;
+	    font-family: 'Press Start 2P';
+	    font-size: 14px;
+        }
+	
+	.nav-item {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+
+        .connected {
+            color: green;
+        }
+        .disconnected {
+            color: red;
+        }
+        .button {
+		font-family: 'Press Start 2P';
+            background-color: #FFD700;
+            border: none;
+            color: black;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+
+	    #userList, #friendsList {
+	margin-top: 10px;
+        width: 150px;
+        height: 220px;
+        overflow-y: auto;
+	background-color: white;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+        #userTable, #friendsList, #userList, .button {
+            margin-bottom: 20px;
+        }
+
+	#userTable {
+		height: 180px;
+		background-color: white;
+		color: black;
+		display: flex;
+		margin-top: 10px;
+		width: 150px;
+	}
+
+	@media (max-width: 555px)
+	{
+		body {
+			font-size: 10px;
+		}
+		.button {
+			font-size: 8px;
+		}
+	}
+    </style>
+</head>
+<body>
+    Friends connected
+    <table id="userTable" style="background-color: white">
+        <tr>
+            <th></th>
+            <th></th>
+        </tr>
+    </table>
+    Friends list
+    <div>
+        <select id="friendsList" size="10">
+	</select>
+    </div>
+    Users list
+    <div>
+        <select id="userList" size="10"></select>
+    </div>
+    <div>
+        <button id="addFriend" class="button">Add friend</button>
+        <button id="removeFriend" class="button">Remove friend</button>
+		<button id="FriendStats" class="button">View Friend's Stats</button>
+    </div>
+    <script src="/static/friends/friends.js"></script>
+</body>
+</html>

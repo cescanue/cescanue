@@ -1,0 +1,49 @@
+@import "https://fonts.googleapis.com/css?family=Press%20Start%202P";
+
+html, body {
+	color: white;
+	font-family: 'Press Start 2P';
+	    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+
+.form-email {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;	
+}
+
+#content {
+/*	overflow-y: hidden;*/
+	overflow-x: hidden;
+}
+
+.card {
+	margin-top: 20px;
+	width: 90% !important;
+}
+
+@media (max-width: 400px) {
+ 	input {
+		width: 200px;
+	}
+}
+
+ @media (max-width: 994px) {
+	 #content {
+		 overflow-y: scroll;
+	 }
+  }
+
+  @media (max-width: 856px), (max-height: 856px) and (orientation: landscape) {
+  	#content {
+		overflow-y: scroll;
+	}
+  }
+

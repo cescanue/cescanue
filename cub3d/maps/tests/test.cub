@@ -1,0 +1,22 @@
+NO ./textures/barrel.png
+SO ./textures/bluestone.png
+WE ./textures/eagle.png
+EA ./textures/wood.png
+
+CU ./sprites/character/u/
+CD ./sprites/character/d/
+CL ./sprites/character/l/
+CR ./sprites/character/r/
+
+F 77,92,53
+C 163,208,230
+
+111111111
+100000011
+101000001
+101000001
+1010S0001
+101000001
+101110001
+100000001
+111111111

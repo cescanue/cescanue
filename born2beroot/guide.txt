@@ -1,0 +1,374 @@
+BornToBeRoot Project Guide - Debian Setup
+
+This guide provides step-by-step instructions for setting up the BornToBeRoot project on Debian for the 42 school.
+
+Table of Contents
+- Network Configuration
+- Debian Installation
+  - Expert Mode Installation
+  - Partitioning with LVM
+- Post-Installation Steps
+  - APT vs Aptitude
+  - AppArmor vs SELinux
+  - System Update
+  - Install Basic Tools
+  - Locale Problem Fix
+  - Change Hostname
+  - Create User and Group
+  - Configure Sudo
+  - Install and Configure SSH Server
+  - Install and Configure UFW Firewall
+  - Strong Password Policy
+- Monitoring Script Details
+- Monitoring Script
+- Configure Crontab
+- Bonus
+  - Advanced Partitioning
+  - Install WordPress
+  - Install Samba (CIFS)
+  - Locales Reconfiguration
+- Evaluation Questions
+
+---
+
+Network Configuration
+- Set the network to bridge mode.
+- Allocate a 5GB hard disk.
+
+Debian Installation
+
+Expert Mode Installation
+- Boot into Expert mode during the Debian installation.
+
+Partitioning with LVM
+- Use LVM (Logical Volume Manager) for partitioning.
+- Create a separate '/home' partition.
+
+---
+
+Post-Installation Steps
+
+APT vs Aptitude
+- APT and Aptitude are both package managers for Debian-based systems.
+- Aptitude is considered a more advanced front-end for APT, handling dependencies more effectively.
+- Learn more: https://www.fosslinux.com/43884/apt-vs-aptitude.htm
+
+AppArmor vs SELinux
+- AppArmor and SELinux are Mandatory Access Control (MAC) systems.
+- AppArmor requires fewer kernel modifications and works with NFS-mounted files.
+- Learn more: https://en.wikipedia.org/wiki/AppArmor
+
+System Update
+- Run:
+  - sudo apt update
+  - sudo apt upgrade
+
+Install Basic Tools
+- Install essential packages:
+  - sudo apt install vim wget unzip iperf
+- Update PATH:
+  - export PATH=$PATH:/usr/sbin
+
+Locale Problem Fix
+- Add to '~/.bashrc':
+  - export LC_ALL=C
+
+Change Hostname
+- Edit '/etc/hostname' and replace with your desired hostname.
+- Edit '/etc/hosts' and update '127.0.1.1' with your new hostname.
+
+Create User and Group
+- Create a new user (e.g., 'cescanue'):
+  - sudo adduser cescanue
+- Create a new group 'user42':
+  - sudo addgroup user42
+- Add user to groups 'user42' and 'sudo':
+  - sudo adduser cescanue user42
+  - sudo adduser cescanue sudo
+
+Configure Sudo
+- Install 'sudo':
+  - sudo apt install sudo
+- Reboot the system:
+  - sudo reboot
+- Configure strong password policy for 'sudo':
+  - Create a directory for logs:
+    - sudo mkdir /var/log/sudo
+  - Create config file '/etc/sudoers.d/config' with the following content:
+    Defaults  passwd_tries=3
+    Defaults  badpass_message="Wrong password"
+    Defaults  logfile="/var/log/sudo/sudo_config"
+    Defaults  log_input, log_output
+    Defaults  iolog_dir="/var/log/sudo"
+    Defaults  requiretty
+    Defaults  secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+  - Details:
+    - passwd_tries=3: Number of password retries.
+    - badpass_message="Wrong password": Custom error message.
+    - logfile: Sudo log file location.
+    - log_input, log_output: Log levels.
+    - iolog_dir: Directory for input/output logs.
+    - requiretty: Enforces TTY mode.
+    - secure_path: Restricted directories for 'sudo'.
+
+Install and Configure SSH Server
+- Install OpenSSH Server:
+  - sudo apt install openssh-server
+- Check SSH service status:
+  - sudo service ssh status
+- Change SSH port to '4242':
+  - Edit '/etc/ssh/sshd_config' and set 'Port 4242'.
+- Deny root login via SSH:
+  - In '/etc/ssh/sshd_config', set 'PermitRootLogin no'.
+
+Install and Configure UFW Firewall
+- Install UFW:
+  - sudo apt install ufw
+- Enable UFW:
+  - sudo ufw enable
+- Allow SSH port '4242':
+  - sudo ufw allow 4242
+- Check UFW status:
+  - sudo ufw status
+
+Strong Password Policy
+- Edit '/etc/login.defs':
+  PASS_MAX_DAYS   30
+  PASS_MIN_DAYS   2
+  PASS_WARN_AGE   7
+  - Details:
+    - PASS_MAX_DAYS: Password expiration time in days.
+    - PASS_MIN_DAYS: Minimum days before password change.
+    - PASS_WARN_AGE: Days before expiration to warn the user.
+- Install 'libpam-pwquality':
+  - sudo apt install libpam-pwquality
+- Configure PAM:
+  - Edit '/etc/pam.d/common-password' and add after 'pam_pwquality.so retry=3':
+    minlen=10 ucredit=-1 dcredit=-1 lcredit=-1 maxrepeat=3 reject_username difok=7 enforce_for_root
+  - Details:
+    - minlen=10: Minimum password length.
+    - ucredit=-1: At least one uppercase letter.
+    - dcredit=-1: At least one digit.
+    - lcredit=-1: At least one lowercase letter.
+    - maxrepeat=3: Max repeated characters.
+    - reject_username: Password cannot contain the username.
+    - difok=7: Minimum number of characters that must differ from the old password.
+    - enforce_for_root: Apply policy to root user.
+
+---
+
+Monitoring Script Details
+
+- Architecture: uname -a
+- Physical Processors: grep "physical id" /proc/cpuinfo | wc -l
+- Virtual Processors: grep processor /proc/cpuinfo | wc -l
+- RAM Usage: free -m | grep Mem | awk '{printf("%s/%sMB (%.2f%%)", $3, $2, ($3/$2)*100)}'
+- Disk Usage: df -h --total | grep total | awk '{printf("%.1f/%.fGb (%s)", $3, $2, $5)}'
+- CPU Load: top -bn1 | grep Cpu | awk '{printf("%.1f%%", $2 + $4)}'
+- Last Boot: uptime -s | awk '{printf("%s %s\n", $1, substr($2, 1, length($2) - 3))}'
+- LVM Usage: lsblk | grep lvm | wc -l | awk '{if ($1){printf("yes"); exit;} else print "no"}'
+- Active Connections: ss -ta | grep ESTAB | wc -l
+- Users Logged In: users | wc -w
+- Network Info:
+  - IP: hostname -I
+  - MAC: ip link | grep "link/ether" | awk '{print $2}'
+- Sudo Commands: journalctl _COMM=sudo | grep COMMAND | wc -l
+
+Monitoring Script
+
+Create a script named 'monitoring.sh' with the following content:
+
+#!/bin/bash
+
+ar=$(uname -a)
+nproc=$(grep "physical id" /proc/cpuinfo | wc -l)
+vcpus=$(grep processor /proc/cpuinfo | wc -l)
+mem=$(free -m | grep Mem | awk '{printf("%s/%sMB (%.2f%%)", $3, $2, ($3/$2)*100)}')
+disk=$(df -h --total | grep total | awk '{printf("%.1f/%.fGb (%s)", $3, $2, $5)}')
+cpuload=$(top -bn1 | grep Cpu | awk '{printf("%.1f%%", $2 + $4)}')
+lastboot=$(uptime -s | awk '{printf("%s %s\n", $1, substr($2, 1, length($2) - 3))}')
+lvm=$(lsblk | grep lvm | wc -l | awk '{if ($1){printf("yes"); exit;} else print "no"}')
+activeconnections=$(ss -ta | grep ESTAB | wc -l)
+usersconnected=$(users | wc -w)
+ip=$(hostname -I)
+mac=$(ip link | grep "link/ether" | awk '{print $2}')
+sudo=$(journalctl _COMM=sudo | grep COMMAND | wc -l)
+
+wall "#Architecture: $ar
+#CPU physical: $nproc
+#vCPU: $vcpus
+#Memory Usage: $mem
+#Disk Usage: $disk
+#CPU load: $cpuload
+#Last boot: $lastboot
+#LVM use: $lvm
+#Connections TCP: $activeconnections ESTABLISHED
+#User log: $usersconnected
+#Network: IP $ip ($mac)
+#Sudo: $sudo cmd"
+
+Make the script executable:
+- chmod +x monitoring.sh
+
+---
+
+Configure Crontab
+
+Set up a cron job to run the script every 10 minutes:
+- Edit crontab:
+  - sudo crontab -e
+- Add the following line:
+  - */10 * * * * /path/to/monitoring.sh
+- Enable cron service and reboot:
+  - sudo systemctl enable cron.service
+  - sudo reboot
+
+---
+
+Bonus
+
+Advanced Partitioning
+
+- Manual partitioning during installation.
+- Create partitions:
+  - '/boot': 500MB, mount point '/boot'.
+  - Encrypted volume:
+    - Use remaining space.
+    - Do not assign a mount point.
+    - Configure encrypted volumes:
+      - Select the partition excluding '/boot'.
+      - Erase disk: Yes.
+      - Set encryption password.
+    - Configure LVM:
+      - Create volume group 'LVM'.
+      - Create logical volumes:
+        - 'root': 2.5GB
+        - 'swap': 250MB
+        - 'home': 450MB
+        - 'var': 750MB
+        - 'srv': 250MB
+        - 'tmp': 250MB
+        - 'var-log': 250MB
+      - Assign mount points and file systems.
+
+Install WordPress
+
+- Install Lighttpd:
+  - sudo apt install lighttpd
+- Allow HTTP traffic:
+  - sudo ufw allow 80
+- Install MariaDB:
+  - sudo apt install mariadb-server
+- Secure MariaDB installation:
+  - sudo mysql_secure_installation
+- Install PHP and phpMyAdmin:
+  - sudo apt install php-cgi php-mysql phpmyadmin
+- Configure MariaDB:
+  - sudo mariadb
+    - GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost';
+    - ALTER USER 'root'@'localhost' IDENTIFIED BY 'your_password';
+    - FLUSH PRIVILEGES;
+    - EXIT;
+- Install WordPress:
+  - Navigate to '/var/www':
+    - cd /var/www
+  - Backup existing 'html':
+    - sudo mv html html_backup
+  - Download WordPress:
+    - sudo wget https://wordpress.org/latest.zip
+    - sudo unzip latest.zip
+    - sudo mv wordpress html
+  - Set permissions:
+    - sudo chmod -R 755 html
+- Create WordPress database using phpMyAdmin or MariaDB CLI.
+- Configure WordPress:
+  - Copy 'wp-config-sample.php' to 'wp-config.php'.
+  - Edit 'wp-config.php':
+    - Set 'DB_NAME', 'DB_USER', 'DB_PASSWORD'.
+  - Complete installation via web interface.
+
+Install Samba (CIFS)
+
+- Install Samba packages:
+  - sudo apt install samba smbclient cifs-utils
+- Configure Samba:
+  - Edit '/etc/samba/smb.conf':
+    - Set 'workgroup = CIFS42'
+- Create shared directory:
+  - sudo mkdir /cifs42
+- Define the share in '/etc/samba/smb.conf':
+  [public]
+    comment = CIFS42 Public Folder
+    path = /cifs42
+    writable = yes
+    guest ok = yes
+    guest only = yes
+    force create mode = 777
+    force directory mode = 777
+- Set permissions:
+  - sudo chmod 2777 /cifs42
+- Restart Samba service:
+  - sudo systemctl restart smbd
+- Update firewall rules:
+  - sudo ufw allow from any to any app Samba
+- Open necessary ports:
+  - Ports 137, 138, 139, and 445.
+
+Locales Reconfiguration
+
+- Fix locale issues:
+  - export LC_ALL=C
+  - sudo locale-gen en_US.UTF-8
+  - sudo dpkg-reconfigure locales
+
+---
+
+Evaluation Questions
+
+- What is a Virtual Machine?
+  - Software emulating hardware components, allowing installation of operating systems in an isolated environment.
+- Why Debian?
+  - Chosen for its stability and user-friendliness.
+- Differences between Debian and Rocky Linux
+  - Comparison: https://computingforgeeks.com/debian-11-vs-debian-10-vs-rocky-linux-8-comparison-table/
+- Difference between APT and Aptitude
+  - Aptitude is an enhanced version of APT with better dependency management.
+- What is AppArmor?
+  - A MAC system based on LSM, confining programs to limited resources.
+- Check if a Graphical System is Installed
+  - echo $XDG_CURRENT_DESKTOP
+- Check UFW Service
+  - sudo service ufw status
+- Check SSH Service
+  - sudo service ssh status
+- Check Linux Version
+  - uname -a
+- Check User's Groups
+  - groups
+- Add Group 'evaluating'
+  - sudo addgroup evaluating
+  - sudo adduser cescanue evaluating
+- Check Hostname
+  - hostname
+- Change Hostname
+  - Edit '/etc/hostname' and '/etc/hosts'.
+- List Partitions
+  - lsblk or sudo fdisk -l
+- What is LVM?
+  - Logical Volume Manager, software for flexible disk management and RAID implementation.
+- Check Sudo Commands Log
+  - sudo cat /var/log/sudo/sudo_config
+- UFW Commands
+  - Check status: sudo ufw status
+  - Add rule: sudo ufw allow 8080
+  - Delete rule: sudo ufw delete allow 8080
+- What is SSH?
+  - Secure communication protocol for server administration.
+- Cron Jobs
+  - Cron is a time-based job scheduler for automating tasks.
+- Checksum of the VM
+  - SHA-1: 7be2dba74f525044562540633fc8b5d274ce2fb9
+
+---
+
+

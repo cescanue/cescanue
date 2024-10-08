@@ -1,0 +1,98 @@
+ProgramData directory created successfully.
+Service installed and set to automatic startup.
+Service started successfully.
+Service stopped successfully.
+Service removed successfully.
+Directory contents deleted successfully.
+Directory deleted successfully.
+ProgramData directory created successfully.
+Service installed and set to automatic startup.
+Service started successfully.
+Service stopped successfully.
+Service removed successfully.
+Directory contents deleted successfully.
+Directory deleted successfully.
+ProgramData directory created successfully.
+Service installed and set to automatic startup.
+Service started successfully.
+ProgramData directory already exists. Continuing...
+Failed to start the service. Error code: 6
+Service stopped successfully.
+Service removed successfully.
+Directory contents deleted successfully.
+Directory deleted successfully.
+ProgramData directory created successfully.
+Service installed and set to automatic startup.
+Service started successfully.
+Service stopped successfully.
+Service removed successfully.
+Directory contents deleted successfully.
+Directory deleted successfully.
+ProgramData directory created successfully.
+Service installed and set to automatic startup.
+Service started successfully.
+[2024-10-04 21:45:49] Service stopped successfully.
+[2024-10-04 21:45:49] Service removed successfully.
+[2024-10-04 21:45:49] Directory contents deleted successfully.
+[2024-10-04 21:45:49] Directory deleted successfully.
+[2024-10-04 21:45:57] ProgramData directory created successfully.
+[2024-10-04 21:45:57] Service installed and set to automatic startup.
+[2024-10-04 21:45:57] Service started successfully.
+[2024-10-04 21:53:13] Service is starting...
+[2024-10-04 21:53:13] Waiting for a user session to become active...
+[2024-10-04 21:53:13] Checking for existing instances of winkey.exe...
+[2024-10-04 21:53:13] Active user session found.
+[2024-10-04 21:53:13] User token obtained successfully.
+[2024-10-04 21:53:13] Attempting to execute winkey.exe from: C:\Users\cescanue\ProyectosWin\outcore\tinky\winkey.exe
+[2024-10-04 21:53:14] winkey.exe started successfully.
+[2024-10-04 21:53:14] Service is running...
+[2024-10-04 21:57:59] winkey.exe process terminated.
+[2024-10-04 21:57:59] Service stopped.
+[2024-10-04 21:58:23] ProgramData directory already exists. Continuing...
+[2024-10-04 21:58:23] Service installed and set to automatic startup.
+[2024-10-04 21:58:23] Service started successfully.
+[2024-10-04 21:58:56] Service stopped successfully.
+[2024-10-04 21:58:56] Service removed successfully.
+[2024-10-04 21:58:56] Directory contents deleted successfully.
+[2024-10-04 21:58:56] Directory deleted successfully.
+[2024-10-04 21:59:20] ProgramData directory created successfully.
+[2024-10-04 21:59:20] Service installed and set to automatic startup.
+[2024-10-04 21:59:20] Service started successfully.
+[2024-10-04 22:01:35] Service stopped successfully.
+[2024-10-04 22:01:35] Service removed successfully.
+[2024-10-04 22:01:35] Directory contents deleted successfully.
+[2024-10-04 22:01:35] Directory deleted successfully.
+[2024-10-04 22:02:01] ProgramData directory created successfully.
+[2024-10-04 22:02:01] Service installed and set to automatic startup.
+[2024-10-04 22:02:01] Service started successfully.
+[2024-10-04 22:20:30] Service stopped successfully.
+[2024-10-04 22:20:30] Service removed successfully.
+[2024-10-04 22:20:30] Directory contents deleted successfully.
+[2024-10-04 22:20:30] Directory deleted successfully.
+[2024-10-04 22:20:37] ProgramData directory created successfully.
+[2024-10-04 22:20:37] Service installed and set to automatic startup.
+[2024-10-04 22:20:37] Service started successfully.
+[2024-10-07 10:02:50] ProgramData directory created successfully.
+[2024-10-07 10:02:50] Service installed and set to automatic startup.
+[2024-10-07 10:02:50] Service started successfully.
+[2024-10-07 10:10:14] Service stopped successfully.
+[2024-10-07 10:10:14] Service removed successfully.
+[2024-10-07 10:10:14] Directory contents deleted successfully.
+[2024-10-07 10:10:14] Directory deleted successfully.
+[2024-10-07 10:35:17] ProgramData directory created successfully.
+[2024-10-07 10:35:17] Service installed and set to automatic startup.
+[2024-10-07 10:35:18] Service started successfully.
+[2024-10-07 10:49:11] Service stopped successfully.
+[2024-10-07 10:49:11] Service removed successfully.
+[2024-10-07 10:49:11] Directory contents deleted successfully.
+[2024-10-07 10:49:11] Directory deleted successfully.
+[2024-10-07 10:49:28] ProgramData directory created successfully.
+[2024-10-07 10:49:28] Service installed and set to automatic startup.
+[2024-10-07 10:49:28] Service started successfully.
+[2024-10-07 11:03:48] Service stopped successfully.
+[2024-10-07 11:03:48] Service removed successfully.
+[2024-10-07 11:03:48] Directory contents deleted successfully.
+[2024-10-07 11:03:48] Directory deleted successfully.
+[2024-10-07 11:03:55] ProgramData directory created successfully.
+[2024-10-07 11:03:55] Service installed and set to automatic startup.
+[2024-10-07 11:03:55] Service started successfully.

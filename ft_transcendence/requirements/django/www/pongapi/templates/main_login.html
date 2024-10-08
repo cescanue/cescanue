@@ -1,0 +1,77 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Pong 42 New User</title>
+    <link rel="stylesheet" href="/static/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/assets/css/login.css">
+    <link rel="stylesheet" href="/static/assets/css/background.css">
+    <link rel="stylesheet" href="/static/assets/css/welcome.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+        .visible {
+            z-index: 1;
+        }
+		body {
+			background-color: transparent;
+		}
+
+
+	@media (max-width: 768px) {
+            .login {
+                width: 80%;
+                padding: 20px;
+            }
+            .post-form {
+                width: 100%;
+                height: auto;
+            }
+            h2 {
+                font-size: 40px;
+            }
+            .welcome {
+                font-size: 40px;
+                letter-spacing: 5px;
+                margin-top: 50px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .login {
+                width: 90%;
+                padding: 10px;
+		margin-right: 20px;
+            }
+            .post-form {
+                width: 100%;
+                height: auto;
+            }
+            h2 {
+                font-size: 30px;
+            }
+            .welcome {
+                font-size: 30px;
+                letter-spacing: 3px;
+                margin-top: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="all-login">
+        <div class="login" style="z-index: 1;">
+            <form class="post-form" method="POST">{% csrf_token %}
+                <h2>Welcome</h2>
+                {{ form.as_p }}
+                <button type="submit" class="submit arrow">Login</button>
+                <div class="buttons">
+                    <a href="/pongapi/newuser"><button class="submit" type="button">New User</button></a>
+                    <div><p style="color:black;">{{ Data.ErrorMsg }}</p></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+

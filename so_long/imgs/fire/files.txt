@@ -1,0 +1,4 @@
+fire1.xpm
+fire2.xpm
+fire3.xpm
+fire4.xpm

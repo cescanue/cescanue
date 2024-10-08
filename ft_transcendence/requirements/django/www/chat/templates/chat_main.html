@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat con Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/assets/css/chat.css">
+</head>
+<body>
+
+<div class="container-fluid h-100">
+    <div class="row h-100">
+        <div class="col-md-2 bg-light d-flex flex-column left-container">
+            <div class="container mt-4">
+                <div class="nav-tabs-container">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="conectados-tab" data-toggle="tab" href="#conectados" role="tab" aria-controls="conectados" aria-selected="true"><i class="bi bi-person-circle" style="color: green;"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="bloqueados-tab" data-toggle="tab" href="#bloqueados" role="tab" aria-controls="bloqueados" aria-selected="false"><i class="bi bi-person-x-fill" style="color: red;"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="otros" aria-selected="false"><i class="bi bi-people-fill"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="conectados" role="tabpanel" aria-labelledby="conectados-tab">
+                        <div>
+                            <p class="text-center" style="margin-top: 20px;">Conectados</p>
+                            <div id="CONNECTEDUSERLIST" name="Connected Users" style="height: 200px; background-color: rgba(128, 128, 128, 0.5); overflow-y: auto; font-size: 12px;"></div>
+                            <div class="btns-left" style="margin-top: 5px;">
+								<input id="CHAT_SELECTED_USER" type="button" value="Chat" class="btn button">
+								<input id="CHAT_ALL_USERS" type="button" value="General chat" class="btn button">
+                                <input id="BLOCK_SELECTED_USER" type="button" value="Block" class="btn button">
+								<input id="PRIVATE_GAME" type="button" value="Private Game" class="btn button" disabled>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="bloqueados" role="tabpanel" aria-labelledby="bloqueados-tab">
+                        <div style="border-top: 2px solid black">
+                            <p class="text-center" style="margin-top: 20px;">Bloqueados</p>
+                            <div id="BLOCKUSERS" name="Block users" class="userlist" style="height: 200px; background-color: rgba(128, 128, 128, 0.5); overflow-y: auto; font-size: 12px;"></div>
+                            <div class="btns-left" style="margin-top: 5px;">
+                                <input id="UNBLOCK_SELECTED_USER" type="button" value="Unblock" class="btn button">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="all" role="tabpanel" aria-labelledby="all-tab">
+                        <p class="text-center" style="margin-top: 20px;">All users</p>
+			<div id="USERLIST" name="All user list" style="height: 200px; background-color: rgba(128, 128, 128, 0.5); overflow-y: auto; font-size: 12px;"></div> 
+		   	 <div class="btns-left" style="margin-top: 5px;">
+        			<input id="BLOCK_SELECTED_USER2" type="button" value="Block" class="btn button">
+					<input id="FriendStats" type="button" value="View user stats" class="btn button">
+		    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <span><div style="margin-top: 10px;" id="CURRENTUSER">General</div></span>
+	    <div id="CONTAINER_CHAT_TEXT">
+                <div id="CHATTEXT" class="chat-text" contenteditable="false" style="font-size: 12px;"></div>
+				<input style="margin-top: 5px;" id="CHAT_MSG_INPUT" type="text" class="form-control" placeholder="Escribe tu mensaje..."><div class="input-group mb-3">
+
+					<div id="divsendmsg" class="input-group-append">
+						<input style="margin-top: 8px;" id="SEND_MSG" type="button" value="Send message" class="btn button">
+					</div>
+				<div id="MSG_STATUS_USERS"></div></div>
+
+                </div>
+		</div>
+    </div>
+</div>
+
+    {{ room_name|json_script:"room_name" }}
+<script>
+    function sendHeight() {
+        var height = document.documentElement.scrollHeight;
+        parent.postMessage({ type: 'resize-iframe', height: height }, '*');
+    }
+
+    window.addEventListener('load', sendHeight);
+    window.addEventListener('resize', sendHeight);
+</script>
+
+<script src="/static/chat/chat.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+

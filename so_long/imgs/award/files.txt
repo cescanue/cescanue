@@ -1,0 +1,4 @@
+friedegg.xpm
+gold.xpm
+money1.xpm
+money2.xpm

@@ -1,0 +1,3 @@
+plant1.xpm
+plant3.xpm
+plant2.xpm
