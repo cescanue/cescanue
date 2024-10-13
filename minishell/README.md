@@ -40,7 +40,6 @@
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/yourusername/minishell.git
 cd minishell
 make
 ```
@@ -139,7 +138,6 @@ Minishell supports several built-in commands:
 
 ## 🤝 Contributors
 
-- **[Your Name](https://github.com/yourusername)**
 - **[Jesuserr](https://github.com/jesuserr)**
 
 Feel free to open issues and contribute to this project by submitting pull requests.
