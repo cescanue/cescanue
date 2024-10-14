@@ -1,11 +1,11 @@
 
-# 🌌 Tinky-Winky
+# 🌌 Tinky-Winkey
 
-Welcome to **Tinky-Winky**! This project offers a unique experience in Windows development, allowing you to dive into creating system services and low-level monitoring tools in C. Get ready to explore the inner workings of Windows with Tinky-Winky! 🚀
+Welcome to **Tinky-Winkey**! This project offers a unique experience in Windows development, allowing you to dive into creating system services and low-level monitoring tools in C. Get ready to explore the inner workings of Windows with Tinky-Winkey! 🚀
 
 ## 📜 Project Description
 
-Tinky-Winky consists of two main components:
+Tinky-Winkey consists of two main components:
 
 1. **`svc.exe` (Tinky Service)**: A Windows service that allows installing, starting, stopping, and deleting the service named "tinky." This service launches the keylogger with elevated permissions to ensure it operates even in restricted environments.
 
@@ -51,7 +51,7 @@ path=C:\Users\cescanue\ProyectosWin\outcore\tinky\winkey.log
 ## 📁 Project Structure
 
 ```
-tinky-winky/
+tinky-Winkey/
 ├── svc.exe          # Windows Service
 ├── winkey.exe       # Keylogger
 ├── winkey.ini       # Optional configuration file for log path
