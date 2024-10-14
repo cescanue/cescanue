@@ -63,7 +63,7 @@ I'm **Carlos Escañuela García**, currently serving as **VP of Service Design A
 
 ## 🚀 42 School Projects
 
-### [tinky-winky](./tinky-winky)
+### [tinky-Winkey](./tinky-Winkey)
 
 Developed a **system utility tool** for monitoring and debugging, featuring real-time analysis and a user-friendly interface.
 
