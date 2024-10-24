@@ -1,19 +1,75 @@
 # 💫 Hi there! 👋
 
-I'm **Carlos Escañuela García**, currently serving as **VP of Service Design Architecture** at **NTT DATA**. With over 25 years of experience in **IT operations**, **cloud infrastructure**, and **network security**, I am passionate about leveraging technology to solve complex problems and drive innovation. My journey is fueled by a commitment to excellence and a desire to continuously learn and adapt in the ever-evolving tech landscape.
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=3000&pause=1000&color=2E9EF4&center=true&vCenter=true&width=435&lines=IT+Infrastructure+Architect;Global+Team+Leader;Cloud+Solutions+Expert;Full+Stack+Developer;25%2B+Years+of+Innovation" alt="Typing SVG" />
+</div>
 
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=3000&pause=1000&color=2E9EF4&center=true&vCenter=true&width=435&lines=IT+Infrastructure+Architect;Cloud+Solutions+Expert;Full+Stack+Developer;System+Design+Specialist" alt="Typing SVG" />
-</p>
+I'm **Carlos Escañuela García**, currently serving as **Delivery & Operations Director** at **NTT Managed Services**. With over 25 years of experience orchestrating mission-critical IT operations and leading global teams, I bring a comprehensive approach to technology leadership and innovation.
 
-## 🌟 About Me
+## 🌟 Professional Journey
 
-- 💼 **Current Role**: VP of Service Design Architecture at NTT DATA
-- 📈 **Experience**: Over 25 years in IT operations, cloud infrastructure, and network security
-- 🎯 **Expertise**: Ensuring high availability, scalability, and operational efficiency in mission-critical environments
-- 🎓 **Education**: Expanded my skills through the **Common Core** at [42 Barcelona](https://www.42barcelona.com/es/), focusing on modern programming techniques
-- 📜 **Qualifications**: Accredited in multiple professional competencies in IT systems, network administration, and software development
-- 🔭 **Passion**: Solving complex problems and driving innovation in IT operations
+```mermaid
+timeline
+    title Leadership & Technical Evolution
+    1994 : Started as Systems Engineer
+         : Hardware & Network Specialist
+    1998 : Technical Manager
+         : Infrastructure Design Lead
+    2003 : Support Manager at Aramark
+         : Enterprise Solutions Architecture
+    2006 : Joined NTT Managed Services
+         : Global Operations Leadership
+    2020 : Transformation to Global Model
+         : Multi-location Team Management
+    2023 : 42 Barcelona Journey
+         : Full Stack Development Evolution
+```
+
+## 🎯 Core Competencies
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://skillicons.dev/icons?i=aws,azure,gcp" width="65px" height="65px" alt="Cloud Platforms">
+      <br>Cloud Platforms
+    </td>
+    <td align="center">
+      <img src="https://skillicons.dev/icons?i=docker,kubernetes,terraform" width="65px" height="65px" alt="DevOps">
+      <br>DevOps
+    </td>
+    <td align="center">
+      <img src="https://skillicons.dev/icons?i=c,cpp,python" width="65px" height="65px" alt="Development">
+      <br>Development
+    </td>
+    <td align="center">
+      <img src="https://skillicons.dev/icons?i=linux,bash,vim" width="65px" height="65px" alt="Systems">
+      <br>Systems
+    </td>
+  </tr>
+</table>
+
+## 🚀 Leadership Highlights
+
+```mermaid
+mindmap
+  root((Leadership))
+    Global Operations
+      Multi-location Teams
+      24x7 Infrastructure
+      Service Delivery
+    Strategic Planning
+      Budget Management
+      Resource Optimization
+      Technology Roadmap
+    Team Development
+      Cross-cultural Leadership
+      Skill Enhancement
+      Performance Management
+    Innovation
+      Digital Transformation
+      Process Optimization
+      Technical Architecture
+```
 
 ## 🛠️ Tech Stack
 
@@ -41,6 +97,20 @@ I'm **Carlos Escañuela García**, currently serving as **VP of Service Design A
 ![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoft-azure&logoColor=white)
 ![Google Cloud](https://img.shields.io/badge/Google%20Cloud-4285F4?style=flat&logo=google-cloud&logoColor=white)
 ![VMware](https://img.shields.io/badge/VMware-607078?style=flat&logo=vmware&logoColor=white)
+
+### Infrastructure & Systems
+```mermaid
+graph LR
+    A[Cloud Architecture] -->|Implements| B[AWS/Azure/GCP]
+    B --> C[Virtualization]
+    C --> D[Infrastructure]
+    D --> E[Security]
+    style A fill:#3498db
+    style B fill:#2ecc71
+    style C fill:#e74c3c
+    style D fill:#f1c40f
+    style E fill:#9b59b6
+```
 
 ## 🎓 Professional Certifications
 
@@ -133,6 +203,42 @@ I'm **Carlos Escañuela García**, currently serving as **VP of Service Design A
 - Security configuration and monitoring tools
 - `System Administration` `Security` `Virtualization`
 
+## 🌐 Global Experience
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/badge/Spain-Operations_Hub-red?style=for-the-badge" alt="Spain"/>
+      </td>
+      <td align="center">
+        <img src="https://img.shields.io/badge/India-Development_Center-orange?style=for-the-badge" alt="India"/>
+      </td>
+      <td align="center">
+        <img src="https://img.shields.io/badge/Global-Service_Delivery-blue?style=for-the-badge" alt="Global"/>
+      </td>
+    </tr>
+  </table>
+</div>
+
+## 📈 Achievement Metrics
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/badge/25+-Years_Experience-blue?style=for-the-badge" alt="Experience"/>
+      </td>
+      <td align="center">
+        <img src="https://img.shields.io/badge/100+-Global_Team_Members-green?style=for-the-badge" alt="Team Size"/>
+      </td>
+      <td align="center">
+        <img src="https://img.shields.io/badge/24/7-Service_Delivery-red?style=for-the-badge" alt="Service Availability"/>
+      </td>
+    </tr>
+  </table>
+</div>
+
 ## 📈 GitHub Stats
 
 <p align="center">
@@ -147,23 +253,25 @@ I'm **Carlos Escañuela García**, currently serving as **VP of Service Design A
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=cescanue&theme=transparent&hide_border=false&layout=compact" alt="Top Languages">
 </p>
 
-## 📫 How to Reach Me
+## 🌍 Languages
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/carlos-escañuela-garcia-58b15816/">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+- 🇪🇸 Spanish (Native)
+- 🇬🇧 English (Professional)
+- 🇪🇸 Catalan (Native)
+
+## 📫 Let's Connect
+
+<div align="center">
+  <a href="https://linkedin.com/in/carlos-escañuela-garcia-58b15816">
+    <img height="50" src="https://user-images.githubusercontent.com/46517096/166973395-19676cd8-f8ec-4abf-83ff-da8243505b82.png"/>
   </a>
   <a href="mailto:cescanuela@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+    <img height="50" src="https://user-images.githubusercontent.com/46517096/166974271-91dfa250-d70b-4cb9-8707-f1bda1b708c3.png"/>
   </a>
-</p>
-
-## 🤝 Let's Connect
-
-I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out!
+</div>
 
 ---
 
 <p align="center">
-  <img src="https://visitcount.itsvg.in/api?id=cescanue&label=Profile%20Views&color=2&icon=1&pretty=false" alt="Profile Views">
+  <img src="https://komarev.com/ghpvc/?username=cescanue&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views">
 </p>
