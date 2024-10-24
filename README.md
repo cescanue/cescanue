@@ -167,30 +167,15 @@ mindmap
 ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white)
 ![Apache](https://img.shields.io/badge/Apache-D22128?style=flat&logo=apache&logoColor=white)
 
-<details>
-<summary>
-  <h3>Infrastructure & Cloud Architecture</h3>
-  <i>Click to explore my infrastructure and cloud expertise</i>
-</summary>
-
-```mermaid
-graph LR
-    A[Enterprise Architecture] -->|Implements| B[Cloud Platforms]
-    B --> C[Infrastructure]
-    C --> D[Network & Security]
-    D --> E[Service Management]
-    B --> F[AWS/Azure/GCP]
-    C --> G[VMware/Containers]
-    D --> H[Security Controls]
-    style A fill:#3498db
-    style B fill:#2ecc71
-    style C fill:#e74c3c
-    style D fill:#f1c40f
-    style E fill:#9b59b6
-    style F fill:#2980b9
-    style G fill:#27ae60
-    style H fill:#f39c12
-```
+### Infrastructure & Cloud Technologies
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazon-aws&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoft-azure&logoColor=white)
+![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat&logo=google-cloud&logoColor=white)
+![VMware](https://img.shields.io/badge/VMware-607078?style=flat&logo=vmware&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white)
+![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat&logo=jenkins&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat&logo=terraform&logoColor=white)
 
 ### Tools & Technologies
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
