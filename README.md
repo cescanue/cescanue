@@ -6,11 +6,8 @@
 
 I'm **Carlos Escañuela García**, currently serving as **VP of Service Design Architecture** at **NTT DATA**. With over 25 years of experience orchestrating mission-critical IT operations and leading global teams, I bring a comprehensive approach to technology leadership and innovation. My journey is fueled by a commitment to excellence and a desire to continuously learn and adapt in the ever-evolving tech landscape.
 
-<details>
-<summary>
-  <h2>🌟 Professional Journey</h2>
-  <i>Click to explore my career evolution and milestones</i>
-</summary>
+
+# 🌟 Professional Journey
 
 ```mermaid
 timeline
@@ -30,7 +27,6 @@ timeline
     2024 : VP of Service Design Architecture
          : Innovation & Architecture Leadership
 ```
-</details>
 
 <details>
 <summary>
@@ -150,6 +146,8 @@ mindmap
 ### Development Tools & Technologies
 ![VSCode](https://img.shields.io/badge/VSCode-007ACC?style=flat&logo=visual-studio-code&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white)
 
 ### Web Technologies
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
@@ -172,8 +170,19 @@ mindmap
 ![VMware](https://img.shields.io/badge/VMware-607078?style=flat&logo=vmware&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white)
-</details>
+![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat&logo=jenkins&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat&logo=terraform&logoColor=white)
 
+### Tools & Technologies
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazon-aws&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoft-azure&logoColor=white)
+![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat&logo=google-cloud&logoColor=white)
+![VMware](https://img.shields.io/badge/VMware-607078?style=flat&logo=vmware&logoColor=white)
+![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat&logo=jenkins&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
+</details>
 <details>
 <summary>
   <h2>🎓 Education & Professional Certifications</h2>
@@ -181,6 +190,11 @@ mindmap
 </summary>
 
 ### Education & Recent Achievements
+<details>
+<summary>
+  <h3>View Educational Timeline</h3>
+  <i>Click to see my academic journey</i>
+</summary>
 
 ```mermaid
 timeline
@@ -192,12 +206,15 @@ timeline
     2003 : Higher Degree in Business Computing
          : Technical Systems Specialization
 ```
-
+</details>
 
 ### Professional Certifications
 
-
-### Development & Programming
+<details>
+<summary>
+  <h3>Development & Programming</h3>
+  <i>Click to view my software development certifications</i>
+</summary>
 
 ```mermaid
 graph TB
@@ -219,15 +236,18 @@ graph TB
     style H fill:#16a085
     style I fill:#8e44ad
 ```
-
+</details>
 
 - **IFCD0210** - Web Applications Development
 - **IFCD0112** - Object-Oriented Programming and Relational Databases
 - **IFCD0111** - Structured Programming for Business Applications
 - **IFCT0610** - Administration and Programming in ERP and CRM Systems
 
-
-### Systems & Infrastructure
+<details>
+<summary>
+  <h3>Systems & Infrastructure</h3>
+  <i>Click to view my infrastructure and systems certifications</i>
+</summary>
 
 ```mermaid
 graph LR
@@ -243,7 +263,7 @@ graph LR
     style E fill:#9b59b6
     style F fill:#27ae60
 ```
-
+</details>
 
 - **IFCT0510** - IT Systems Management
 - **IFCT0210** - IT Systems Operation
@@ -251,8 +271,11 @@ graph LR
 - **IFCT0309** - Microcomputer Systems Assembly and Repair
 - **IFCT0209** - Microcomputer Systems
 
-
-### Security & Enterprise Systems
+<details>
+<summary>
+  <h3>Security & Enterprise Systems</h3>
+  <i>Click to view my security certifications</i>
+</summary>
 
 ```mermaid
 graph TB
@@ -266,13 +289,16 @@ graph TB
     style D fill:#f1c40f
     style E fill:#9b59b6
 ```
-
+</details>
 
 - **IFCT0609** - IT Security
 - **IFCT0109** - Computer Systems Security
 
-
-### FPCAT Accreditations
+<details>
+<summary>
+  <h3>FPCAT Accreditations</h3>
+  <i>Click to view my professional accreditations</i>
+</summary>
 
 ```mermaid
 timeline
@@ -283,7 +309,7 @@ timeline
     2023 : Network Systems (ASIX)
          : Systems & Microcomputing
 ```
-
+</details>
 
 - **DAM** - Multiplatform Application Development
 - **DAW** - Web Application Development
@@ -291,9 +317,7 @@ timeline
 - **ASIX** - Network Computer Systems Administration
 - **SMX** - Microcomputer Systems and Networks
 
-
 ### Certification Distribution
-
 <div align="center">
   <table>
     <tr>
@@ -309,7 +333,6 @@ timeline
     </tr>
   </table>
 </div>
-
 </details>
 
 ## 🚀 42 Barcelona Projects & Achievements
