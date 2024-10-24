@@ -191,8 +191,8 @@ graph LR
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 </details>
 
-<details>
-<summary><h2>🎓 Education & Professional Certifications</h2></summary>
+
+<h2>🎓 Education & Professional Certifications</h2>
 
 ### Education & Recent Achievements
 ```mermaid
@@ -325,9 +325,6 @@ mindmap
       Systems Protection
       Service Auditing
 ```
-</details>
-
-</details>
 
 ## 🚀 42 Barcelona Projects & Achievements
 
