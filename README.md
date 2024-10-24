@@ -91,8 +91,6 @@ mindmap
 
 ## 🛠️ Technical Expertise
 
-## 🛠️ Technical Expertise
-
 ### Development & Programming
 
 <div align="center">
@@ -116,19 +114,19 @@ mindmap
   </tr>
   <tr>
     <td align="center">
-      <img src="https://skillicons.dev/icons?i=nodejs,react,nestjs" width="65px" height="65px" alt="Frameworks">
-      <br>Modern Frameworks
-      <br><small>Node.js • React • NestJS</small>
-    </td>
-    <td align="center">
-      <img src="https://skillicons.dev/icons?i=postgresql,mysql,mongodb" width="65px" height="65px" alt="Databases">
+      <img src="https://skillicons.dev/icons?i=postgresql,mysql,microsoftsql" width="65px" height="65px" alt="Databases">
       <br>Databases
-      <br><small>PostgreSQL • MySQL • MongoDB</small>
+      <br><small>PostgreSQL • MySQL • SQL Server</small>
     </td>
     <td align="center">
-      <img src="https://skillicons.dev/icons?i=docker,kubernetes,jenkins" width="65px" height="65px" alt="DevOps">
+      <img src="https://skillicons.dev/icons?i=docker,kubernetes" width="65px" height="65px" alt="DevOps">
       <br>DevOps Tools
-      <br><small>Docker • K8s • Jenkins</small>
+      <br><small>Docker • Kubernetes</small>
+    </td>
+    <td align="center">
+      <img src="https://skillicons.dev/icons?i=linux,vim,git" width="65px" height="65px" alt="Development Tools">
+      <br>Development Tools
+      <br><small>Linux • Vim • Git</small>
     </td>
   </tr>
 </table>
@@ -139,25 +137,18 @@ mindmap
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white)
-![NPM](https://img.shields.io/badge/NPM-CB3837?style=flat&logo=npm&logoColor=white)
-![Webpack](https://img.shields.io/badge/Webpack-8DD6F9?style=flat&logo=webpack&logoColor=black)
-![Babel](https://img.shields.io/badge/Babel-F9DC3E?style=flat&logo=babel&logoColor=black)
-![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=flat&logo=eslint&logoColor=white)
 
 ### Web Technologies
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
-![SASS](https://img.shields.io/badge/Sass-CC6699?style=flat&logo=sass&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white)
-![Tailwind](https://img.shields.io/badge/Tailwind-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
-![Redux](https://img.shields.io/badge/Redux-764ABC?style=flat&logo=redux&logoColor=white)
-![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=flat&logo=graphql&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
 
-### Development Environments & Testing
+### Development Environments
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=flat&logo=ubuntu&logoColor=white)
-![Jest](https://img.shields.io/badge/Jest-C21325?style=flat&logo=jest&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=postman&logoColor=white)
+![Windows Server](https://img.shields.io/badge/Windows_Server-0078D6?style=flat&logo=windows&logoColor=white)
 ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white)
 ![Apache](https://img.shields.io/badge/Apache-D22128?style=flat&logo=apache&logoColor=white)
 
