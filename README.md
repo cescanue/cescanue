@@ -181,11 +181,6 @@ mindmap
 </summary>
 
 ### Education & Recent Achievements
-<details>
-<summary>
-  <h3>View Educational Timeline</h3>
-  <i>Click to see my academic journey</i>
-</summary>
 
 ```mermaid
 timeline
@@ -197,15 +192,12 @@ timeline
     2003 : Higher Degree in Business Computing
          : Technical Systems Specialization
 ```
-</details>
+
 
 ### Professional Certifications
 
-<details>
-<summary>
-  <h3>Development & Programming</h3>
-  <i>Click to view my software development certifications</i>
-</summary>
+
+### Development & Programming
 
 ```mermaid
 graph TB
@@ -227,18 +219,15 @@ graph TB
     style H fill:#16a085
     style I fill:#8e44ad
 ```
-</details>
+
 
 - **IFCD0210** - Web Applications Development
 - **IFCD0112** - Object-Oriented Programming and Relational Databases
 - **IFCD0111** - Structured Programming for Business Applications
 - **IFCT0610** - Administration and Programming in ERP and CRM Systems
 
-<details>
-<summary>
-  <h3>Systems & Infrastructure</h3>
-  <i>Click to view my infrastructure and systems certifications</i>
-</summary>
+
+### Systems & Infrastructure
 
 ```mermaid
 graph LR
@@ -254,7 +243,7 @@ graph LR
     style E fill:#9b59b6
     style F fill:#27ae60
 ```
-</details>
+
 
 - **IFCT0510** - IT Systems Management
 - **IFCT0210** - IT Systems Operation
@@ -262,11 +251,8 @@ graph LR
 - **IFCT0309** - Microcomputer Systems Assembly and Repair
 - **IFCT0209** - Microcomputer Systems
 
-<details>
-<summary>
-  <h3>Security & Enterprise Systems</h3>
-  <i>Click to view my security certifications</i>
-</summary>
+
+### Security & Enterprise Systems
 
 ```mermaid
 graph TB
@@ -280,16 +266,13 @@ graph TB
     style D fill:#f1c40f
     style E fill:#9b59b6
 ```
-</details>
+
 
 - **IFCT0609** - IT Security
 - **IFCT0109** - Computer Systems Security
 
-<details>
-<summary>
-  <h3>FPCAT Accreditations</h3>
-  <i>Click to view my professional accreditations</i>
-</summary>
+
+### FPCAT Accreditations
 
 ```mermaid
 timeline
@@ -300,7 +283,7 @@ timeline
     2023 : Network Systems (ASIX)
          : Systems & Microcomputing
 ```
-</details>
+
 
 - **DAM** - Multiplatform Application Development
 - **DAW** - Web Application Development
@@ -308,7 +291,9 @@ timeline
 - **ASIX** - Network Computer Systems Administration
 - **SMX** - Microcomputer Systems and Networks
 
+
 ### Certification Distribution
+
 <div align="center">
   <table>
     <tr>
@@ -324,6 +309,7 @@ timeline
     </tr>
   </table>
 </div>
+
 </details>
 
 ## 🚀 42 Barcelona Projects & Achievements
