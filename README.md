@@ -7,7 +7,10 @@
 I'm **Carlos Escañuela García**, currently serving as **VP of Service Design Architecture** at **NTT DATA**. With over 25 years of experience orchestrating mission-critical IT operations and leading global teams, I bring a comprehensive approach to technology leadership and innovation. My journey is fueled by a commitment to excellence and a desire to continuously learn and adapt in the ever-evolving tech landscape.
 
 <details>
-<summary><h2>🌟 Professional Journey</h2></summary>
+<summary>
+  <h2>🌟 Professional Journey</h2>
+  <i>Click to explore my career evolution and milestones</i>
+</summary>
 
 ```mermaid
 timeline
@@ -30,7 +33,10 @@ timeline
 </details>
 
 <details>
-<summary><h2>🎯 Core Competencies</h2></summary>
+<summary>
+  <h2>🎯 Core Competencies</h2>
+  <i>Click to view my leadership and management skills</i>
+</summary>
 
 ```mermaid
 mindmap
@@ -55,7 +61,10 @@ mindmap
 </details>
 
 <details>
-<summary><h2>💼 Professional Impact</h2></summary>
+<summary>
+  <h2>💼 Professional Impact</h2>
+  <i>Click to see my achievements and contributions</i>
+</summary>
 
 <div align="center">
   <table>
@@ -159,7 +168,10 @@ mindmap
 ![Apache](https://img.shields.io/badge/Apache-D22128?style=flat&logo=apache&logoColor=white)
 
 <details>
-<summary><h3>Infrastructure & Cloud Architecture</h3></summary>
+<summary>
+  <h3>Infrastructure & Cloud Architecture</h3>
+  <i>Click to explore my infrastructure and cloud expertise</i>
+</summary>
 
 ```mermaid
 graph LR
@@ -190,13 +202,18 @@ graph LR
 ![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat&logo=jenkins&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 </details>
-
 <details>
-<summary><h2>🎓 Education & Professional Certifications</h2></summary>
+<summary>
+  <h2>🎓 Education & Professional Certifications</h2>
+  <i>Click to explore my educational background and certifications</i>
+</summary>
 
 ### Education & Recent Achievements
 <details>
-<summary>View educational timeline</summary>
+<summary>
+  <h3>View Educational Timeline</h3>
+  <i>Click to see my academic journey</i>
+</summary>
 
 ```mermaid
 timeline
@@ -212,9 +229,11 @@ timeline
 
 ### Professional Certifications
 
-### Development & Programming
 <details>
-<summary>View development certifications</summary>
+<summary>
+  <h3>Development & Programming</h3>
+  <i>Click to view my software development certifications</i>
+</summary>
 
 ```mermaid
 graph TB
@@ -243,9 +262,11 @@ graph TB
 - **IFCD0111** - Structured Programming for Business Applications
 - **IFCT0610** - Administration and Programming in ERP and CRM Systems
 
-### Systems & Infrastructure
 <details>
-<summary>View infrastructure certifications</summary>
+<summary>
+  <h3>Systems & Infrastructure</h3>
+  <i>Click to view my infrastructure and systems certifications</i>
+</summary>
 
 ```mermaid
 graph LR
@@ -269,9 +290,11 @@ graph LR
 - **IFCT0309** - Microcomputer Systems Assembly and Repair
 - **IFCT0209** - Microcomputer Systems
 
-### Security & Enterprise Systems
 <details>
-<summary>View security certifications</summary>
+<summary>
+  <h3>Security & Enterprise Systems</h3>
+  <i>Click to view my security certifications</i>
+</summary>
 
 ```mermaid
 graph TB
@@ -290,9 +313,11 @@ graph TB
 - **IFCT0609** - IT Security
 - **IFCT0109** - Computer Systems Security
 
-### FPCAT Accreditations
 <details>
-<summary>View FPCAT accreditations</summary>
+<summary>
+  <h3>FPCAT Accreditations</h3>
+  <i>Click to view my professional accreditations</i>
+</summary>
 
 ```mermaid
 timeline
@@ -327,29 +352,6 @@ timeline
     </tr>
   </table>
 </div>
-
-### Core Competencies
-<details>
-<summary>View core competencies</summary>
-
-```mermaid
-mindmap
-  root((Professional\nExpertise))
-    Software Development
-      Object-Oriented Programming
-      Structured Programming
-      Web Technologies
-    Systems & Infrastructure
-      Systems Management
-      Network Administration
-      Service Management
-    Security
-      IT Security
-      Systems Protection
-      Service Auditing
-```
-</details>
-
 </details>
 
 ## 🚀 42 Barcelona Projects & Achievements
@@ -370,6 +372,12 @@ mindmap
   - Template metaprogramming
 
 #### System Engineering
+<details>
+<summary>
+  <h3>Core Projects Graph</h3>
+  <i>Click to view project relationships</i>
+</summary>
+
 ```mermaid
 graph LR
     A[Core Projects] -->|Infrastructure| B[inception]
@@ -386,6 +394,7 @@ graph LR
     style F fill:#27ae60
     style G fill:#f39c12
 ```
+</details>
 
 - [inception](./inception)
   - Docker-based multi-service infrastructure
@@ -431,6 +440,12 @@ graph LR
   - Performance monitoring and diagnostics
 
 #### Core Utils Implementation
+<details>
+<summary>
+  <h3>Core Utils Architecture</h3>
+  <i>Click to view the utilities structure</i>
+</summary>
+
 ```mermaid
 graph TB
     A[Foundation Projects] -->|System Calls| B[pipex]
@@ -445,6 +460,7 @@ graph TB
     style E fill:#9b59b6
     style F fill:#27ae60
 ```
+</details>
 
 - [pipex](./pipex)
   - Unix pipe mechanism implementation
@@ -490,9 +506,18 @@ graph TB
 </div>
 
 <details>
-<summary><h2>💼 Professional Experience</h2></summary>
+<summary>
+  <h2>💼 Professional Experience</h2>
+  <i>Click to explore my career journey and achievements</i>
+</summary>
 
 ### NTT DATA (2006 - Present)
+<details>
+<summary>
+  <h3>Career Evolution at NTT DATA</h3>
+  <i>Click to view my journey at NTT DATA</i>
+</summary>
+
 ```mermaid
 timeline
     title Career Evolution at NTT DATA
@@ -505,6 +530,7 @@ timeline
     2024 : VP of Service Design Architecture
          : Innovation Leadership
 ```
+</details>
 
 #### Key Achievements
 - Led digital transformation initiatives across multiple regions
@@ -542,7 +568,10 @@ timeline
 </details>
 
 <details>
-<summary><h2>🌐 Global Impact</h2></summary>
+<summary>
+  <h2>🌐 Global Impact</h2>
+  <i>Click to explore my international presence</i>
+</summary>
 
 <div align="center">
   <table>
@@ -576,7 +605,10 @@ timeline
 </div>
 
 <details>
-<summary><h2>🌍 Languages</h2></summary>
+<summary>
+  <h2>🌍 Languages</h2>
+  <i>Click to view my language proficiencies</i>
+</summary>
 
 - 🇪🇸 Spanish (Native)
 - 🇬🇧 English (Professional)
@@ -584,7 +616,10 @@ timeline
 </details>
 
 <details>
-<summary><h2>🔍 Areas of Expertise</h2></summary>
+<summary>
+  <h2>🔍 Areas of Expertise</h2>
+  <i>Click to discover my specialized knowledge areas</i>
+</summary>
 
 ```mermaid
 mindmap
