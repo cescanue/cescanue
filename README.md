@@ -213,31 +213,28 @@ graph LR
 
 ### Core Projects Portfolio
 
-#### Advanced System Programming
+#### Advanced Development
 - [ft_transcendence](./ft_transcendence) - Full-stack multiplayer game platform
   - `TypeScript` `NestJS` `PostgreSQL` `Docker` `WebSocket`
-- [webserv](./webserv) - Custom HTTP/1.1 server implementation
-  - `C++` `Network Programming` `HTTP Protocol` `Socket Programming`
-- [ft_containers](./ft_containers) - STL containers implementation
-  - `C++` `Data Structures` `Memory Management` `Templates`
+  - Real-time gaming with advanced features
+  - OAuth integration and user management
+  - Containerized deployment
 
-#### System Architecture
-- [inception](./inception) - Multi-service containerized infrastructure
-  - `Docker` `Docker-Compose` `Nginx` `WordPress` `MariaDB`
-- [ft_irc](./ft_irc) - IRC server with advanced features
-  - `C++` `Network Programming` `Multi-threading` `IRC Protocol`
-- [minishell](./minishell) - UNIX shell implementation
-  - `C` `Process Management` `System Calls` `Parser Design`
+- [cpp](./cpp) - C++ Programming Modules
+  - `C++` `OOP` `STL` `Templates`
+  - Advanced object-oriented programming
+  - Memory management and RAII principles
+  - Template metaprogramming
 
-#### Core Algorithms & Systems
+#### System Engineering
 ```mermaid
 graph LR
-    A[Core Projects] -->|Algorithms| B[push_swap]
-    A -->|Concurrency| C[philosophers]
-    A -->|Graphics| D[cub3d]
-    B -->|Sorting| E[Advanced Algorithms]
-    C -->|Threading| F[Synchronization]
-    D -->|Raycasting| G[3D Graphics]
+    A[Core Projects] -->|Infrastructure| B[inception]
+    A -->|Networking| C[ft_irc]
+    A -->|Systems| D[minishell]
+    B -->|Docker| E[Multi-service]
+    C -->|Protocol| F[IRC Server]
+    D -->|Shell| G[Unix Shell]
     style A fill:#3498db
     style B fill:#2ecc71
     style C fill:#e74c3c
@@ -247,34 +244,103 @@ graph LR
     style G fill:#f39c12
 ```
 
-#### Fundamental Projects
-- [libft](./libft) - Custom C standard library
-  - `C` `Library Development` `Data Structures` `Memory Management`
-- [get_next_line](./get_next_line) - File reading implementation
-  - `C` `File I/O` `Buffer Management` `Static Variables`
-- [ft_printf](./ft_printf) - printf function recreation
-  - `C` `Variadic Functions` `String Formatting` `Buffer Management`
-- [born2beroot](./born2beroot) - System administration
-  - `Virtual Machine` `System Configuration` `Security Hardening`
+- [inception](./inception)
+  - Docker-based multi-service infrastructure
+  - `Docker` `Docker-Compose` `Nginx` `WordPress` `MariaDB`
+  - Service orchestration and networking
 
-#### Communication Projects
-- [minitalk](./minitalk) - UNIX signal communication
-  - `C` `Signal Handling` `Binary Communication` `Process Management`
-- [pipex](./pipex) - UNIX pipe mechanism recreation
-  - `C` `Process Management` `File Redirection` `Pipe Implementation`
+- [ft_irc](./ft_irc)
+  - Complete IRC server implementation
+  - `C++` `Network Programming` `Multi-threading`
+  - Custom protocol implementation
 
-### Project Metrics
+- [minishell](./minishell)
+  - Custom Unix shell implementation
+  - `C` `Process Management` `Parser Design`
+  - Signal handling and job control
+
+#### Graphics & Game Development
+- [cub3d](./cub3d)
+  - 3D game engine using raycasting
+  - `C` `Mathematics` `Graphics` `Game Development`
+  - Dynamic lighting and gameplay mechanics
+
+- [so_long](./so_long)
+  - 2D game with custom graphics engine
+  - `C` `Graphics` `Game Logic`
+  - Sprite animation and collision detection
+
+#### Algorithm Specialization
+- [push_swap](./push_swap)
+  - Advanced sorting algorithm implementation
+  - `C` `Algorithms` `Data Structures`
+  - Operation count optimization
+
+- [philosophers](./philosophers)
+  - Dining philosophers problem solution
+  - `C` `Threading` `Synchronization`
+  - Deadlock prevention and resource management
+
+#### System Monitoring & Tools
+- [tinky-winkey](./tinky-winkey)
+  - System monitoring and debugging utility
+  - `C++` `System Programming` `Real-time Analysis`
+  - Performance monitoring and diagnostics
+
+#### Core Utils Implementation
+```mermaid
+graph TB
+    A[Foundation Projects] -->|System Calls| B[pipex]
+    A -->|IPC| C[minitalk]
+    A -->|I/O| D[get_next_line]
+    A -->|String| E[ft_printf]
+    A -->|Library| F[libft]
+    style A fill:#3498db
+    style B fill:#2ecc71
+    style C fill:#e74c3c
+    style D fill:#f1c40f
+    style E fill:#9b59b6
+    style F fill:#27ae60
+```
+
+- [pipex](./pipex)
+  - Unix pipe mechanism implementation
+  - `C` `Process Management` `File Redirection`
+
+- [minitalk](./minitalk)
+  - Inter-process communication system
+  - `C` `Signal Handling` `Binary Communication`
+
+- [ft_printf](./ft_printf)
+  - printf function recreation
+  - `C` `Variadic Functions` `String Formatting`
+
+- [get_next_line](./get_next_line)
+  - File reading implementation
+  - `C` `File I/O` `Buffer Management`
+
+- [libft](./libft)
+  - Custom C standard library
+  - `C` `Data Structures` `Memory Management`
+
+#### System Administration
+- [born2beroot](./born2beroot)
+  - System administration and security
+  - `Virtual Machine` `System Configuration`
+  - Security hardening and monitoring
+
+### Achievement Metrics
 <div align="center">
   <table>
     <tr>
       <td align="center">
-        <img src="https://img.shields.io/badge/20+-Completed_Projects-blue?style=for-the-badge" alt="Projects"/>
+        <img src="https://img.shields.io/badge/16-Completed_Projects-blue?style=for-the-badge" alt="Projects"/>
       </td>
       <td align="center">
         <img src="https://img.shields.io/badge/1000+-Hours_of_Coding-green?style=for-the-badge" alt="Coding Hours"/>
       </td>
       <td align="center">
-        <img src="https://img.shields.io/badge/100+-Technical_Skills-red?style=for-the-badge" alt="Skills"/>
+        <img src="https://img.shields.io/badge/Advanced-Technical_Skills-red?style=for-the-badge" alt="Skills"/>
       </td>
     </tr>
   </table>
