@@ -565,13 +565,8 @@ timeline
 - Hardware and network technical lead
 - Network installation and maintenance
 - System and printer maintenance
-</details>
 
-<details>
-<summary>
-  <h2>🌐 Global Impact</h2>
-  <i>Click to explore my international presence</i>
-</summary>
+<h2>🌐 Global Impact</h2>
 
 <div align="center">
   <table>
