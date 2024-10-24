@@ -196,58 +196,125 @@ timeline
          : Technical Systems Specialization
 ```
 
-### Professional Certifications Path
+## 🎓 Professional Certifications
 
-#### Development & Applications
+### Development & Programming
 ```mermaid
-graph LR
-    A[Web Development] -->|IFCD0210| B[Web Technologies]
-    A -->|DAW| C[Web Applications]
-    A -->|DAM| D[Multiplatform Dev]
-    style A fill:#3498db
-    style B fill:#2ecc71
-    style C fill:#e74c3c
-    style D fill:#f1c40f
-```
-
-- **IFCD0210** - Web Application Development (2024)
-- **DAM** - Multiplatform Applications Development (2024)
-- **DAW** - Web Applications Development (2024)
-
-#### Systems & Infrastructure
-```mermaid
-graph LR
-    A[Infrastructure] -->|IFCT0510| B[Systems Management]
-    A -->|IFCT0210| C[Systems Operation]
-    A -->|IFCT0509| D[Internet Services]
-    A -->|ASIX| E[Network Systems]
+graph TB
+    A[Software Development] -->|IFCD0112| B[Object-Oriented Programming]
+    A -->|IFCD0111| C[Structured Programming]
+    A -->|IFCD0210| D[Web Development]
+    B -->|Specialization| E[Relational Databases]
+    C -->|Focus| F[Business Applications]
+    D -->|Technologies| G[Web Applications]
     style A fill:#3498db
     style B fill:#2ecc71
     style C fill:#e74c3c
     style D fill:#f1c40f
     style E fill:#9b59b6
+    style F fill:#27ae60
+    style G fill:#34495e
 ```
 
-- **IFCT0510** - IT Systems Management (2024)
-- **IFCT0210** - IT Systems Operation (2024)
-- **IFCT0509** - Internet Services Administration (2024)
-- **ASIX** - Network Computer Systems Administration (2023)
+- **IFCD0210** - Web Applications Development
+- **IFCD0112** - Object-Oriented Programming and Relational Databases
+- **IFCD0111** - Structured Programming for Business Applications
 
-#### Security & Microcomputer Systems
+### Systems & Infrastructure
 ```mermaid
 graph LR
-    A[Security & Systems] -->|Security| B[InfoSec Specialist]
-    A -->|IFCT0309| C[Systems Assembly]
-    A -->|SMX| D[Networks & Systems]
+    A[Infrastructure] -->|IFCT0510| B[Systems Management]
+    A -->|IFCT0210| C[Systems Operation]
+    A -->|IFCT0509| D[Internet Services]
+    A -->|IFCT0309| E[Microcomputer Systems]
+    A -->|IFCT0209| F[System Support]
     style A fill:#3498db
     style B fill:#2ecc71
     style C fill:#e74c3c
     style D fill:#f1c40f
+    style E fill:#9b59b6
+    style F fill:#27ae60
 ```
 
-- **Information Security** - IT Security Specialist (2024)
-- **IFCT0309** - Microcomputer Systems Assembly (2024)
-- **SMX** - Microcomputer Systems and Networks (2024)
+- **IFCT0510** - IT Systems Management
+- **IFCT0210** - IT Systems Operation
+- **IFCT0509** - Internet Services Administration
+- **IFCT0309** - Microcomputer Systems Assembly and Repair
+- **IFCT0209** - Microcomputer Systems
+
+### Security & Services
+```mermaid
+graph TB
+    A[Security & Services] -->|IFCT0609| B[IT Security]
+    A -->|IFCT0109| C[Systems Security]
+    A -->|IFCT0610| D[Email Services]
+    B -->|Specialization| E[Security Implementation]
+    C -->|Focus| F[System Protection]
+    D -->|Management| G[Service Auditing]
+    style A fill:#3498db
+    style B fill:#2ecc71
+    style C fill:#e74c3c
+    style D fill:#f1c40f
+    style E fill:#9b59b6
+    style F fill:#27ae60
+    style G fill:#34495e
+```
+
+- **IFCT0609** - IT Security
+- **IFCT0109** - Computer Systems Security
+- **IFCT0610** - Email Services Administration and Auditing
+
+### FPCAT Accreditations
+```mermaid
+timeline
+    title Professional Development Path
+    2024 : DAM - Multiplatform Applications
+         : DAW - Web Applications
+         : Information Security
+    2023 : Network Systems (ASIX)
+         : Systems & Microcomputing
+```
+
+- **DAM** - Multiplatform Application Development
+- **DAW** - Web Application Development
+- **Information Security** - IT Security Specialist
+- **ASIX** - Network Computer Systems Administration
+- **SMX** - Microcomputer Systems and Networks
+
+### Certification Distribution
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/badge/3-Development_Certifications-blue?style=for-the-badge" alt="Development"/>
+      </td>
+      <td align="center">
+        <img src="https://img.shields.io/badge/5-Infrastructure_Certifications-green?style=for-the-badge" alt="Infrastructure"/>
+      </td>
+      <td align="center">
+        <img src="https://img.shields.io/badge/3-Security_Certifications-red?style=for-the-badge" alt="Security"/>
+      </td>
+    </tr>
+  </table>
+</div>
+
+### Core Competencies
+```mermaid
+mindmap
+  root((Professional\nExpertise))
+    Software Development
+      Object-Oriented Programming
+      Structured Programming
+      Web Technologies
+    Systems & Infrastructure
+      Systems Management
+      Network Administration
+      Service Management
+    Security
+      IT Security
+      Systems Protection
+      Service Auditing
+```
 
 ## 🚀 42 Barcelona Projects & Achievements
 
