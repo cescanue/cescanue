@@ -195,6 +195,9 @@ graph LR
 <summary><h2>🎓 Education & Professional Certifications</h2></summary>
 
 ### Education & Recent Achievements
+<details>
+<summary>View educational timeline</summary>
+
 ```mermaid
 timeline
     title Educational Journey
@@ -205,10 +208,14 @@ timeline
     2003 : Higher Degree in Business Computing
          : Technical Systems Specialization
 ```
+</details>
 
 ### Professional Certifications
 
 ### Development & Programming
+<details>
+<summary>View development certifications</summary>
+
 ```mermaid
 graph TB
     A[Software Development] -->|IFCD0112| B[Object-Oriented Programming]
@@ -229,6 +236,7 @@ graph TB
     style H fill:#16a085
     style I fill:#8e44ad
 ```
+</details>
 
 - **IFCD0210** - Web Applications Development
 - **IFCD0112** - Object-Oriented Programming and Relational Databases
@@ -236,6 +244,9 @@ graph TB
 - **IFCT0610** - Administration and Programming in ERP and CRM Systems
 
 ### Systems & Infrastructure
+<details>
+<summary>View infrastructure certifications</summary>
+
 ```mermaid
 graph LR
     A[Infrastructure] -->|IFCT0510| B[Systems Management]
@@ -250,6 +261,7 @@ graph LR
     style E fill:#9b59b6
     style F fill:#27ae60
 ```
+</details>
 
 - **IFCT0510** - IT Systems Management
 - **IFCT0210** - IT Systems Operation
@@ -258,6 +270,9 @@ graph LR
 - **IFCT0209** - Microcomputer Systems
 
 ### Security & Enterprise Systems
+<details>
+<summary>View security certifications</summary>
+
 ```mermaid
 graph TB
     A[Security & Enterprise] -->|IFCT0609| B[IT Security]
@@ -270,11 +285,15 @@ graph TB
     style D fill:#f1c40f
     style E fill:#9b59b6
 ```
+</details>
 
 - **IFCT0609** - IT Security
 - **IFCT0109** - Computer Systems Security
 
 ### FPCAT Accreditations
+<details>
+<summary>View FPCAT accreditations</summary>
+
 ```mermaid
 timeline
     title Professional Development Path
@@ -284,6 +303,7 @@ timeline
     2023 : Network Systems (ASIX)
          : Systems & Microcomputing
 ```
+</details>
 
 - **DAM** - Multiplatform Application Development
 - **DAW** - Web Application Development
@@ -309,6 +329,9 @@ timeline
 </div>
 
 ### Core Competencies
+<details>
+<summary>View core competencies</summary>
+
 ```mermaid
 mindmap
   root((Professional\nExpertise))
@@ -325,6 +348,7 @@ mindmap
       Systems Protection
       Service Auditing
 ```
+</details>
 
 </details>
 
