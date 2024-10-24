@@ -327,6 +327,8 @@ mindmap
 ```
 </details>
 
+</details>
+
 ## 🚀 42 Barcelona Projects & Achievements
 
 ### Core Projects Portfolio
