@@ -6,7 +6,8 @@
 
 I'm **Carlos Escañuela García**, currently serving as **VP of Service Design Architecture** at **NTT DATA**. With over 25 years of experience orchestrating mission-critical IT operations and leading global teams, I bring a comprehensive approach to technology leadership and innovation. My journey is fueled by a commitment to excellence and a desire to continuously learn and adapt in the ever-evolving tech landscape.
 
-## 🌟 Professional Journey
+<details>
+<summary><h2>🌟 Professional Journey</h2></summary>
 
 ```mermaid
 timeline
@@ -26,8 +27,10 @@ timeline
     2024 : VP of Service Design Architecture
          : Innovation & Architecture Leadership
 ```
+</details>
 
-## 🎯 Core Competencies
+<details>
+<summary><h2>🎯 Core Competencies</h2></summary>
 
 ```mermaid
 mindmap
@@ -49,8 +52,10 @@ mindmap
       Process Optimization
       Technical Architecture
 ```
+</details>
 
-## 💼 Professional Impact
+<details>
+<summary><h2>💼 Professional Impact</h2></summary>
 
 <div align="center">
   <table>
@@ -88,6 +93,7 @@ mindmap
   - Process automation and optimization
   - Architecture modernization
   - Cloud migration strategies
+</details>
 
 ## 🛠️ Technical Expertise
 
@@ -152,7 +158,8 @@ mindmap
 ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white)
 ![Apache](https://img.shields.io/badge/Apache-D22128?style=flat&logo=apache&logoColor=white)
 
-### Infrastructure & Cloud Architecture
+<details>
+<summary><h3>Infrastructure & Cloud Architecture</h3></summary>
 
 ```mermaid
 graph LR
@@ -182,7 +189,10 @@ graph LR
 ![VMware](https://img.shields.io/badge/VMware-607078?style=flat&logo=vmware&logoColor=white)
 ![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat&logo=jenkins&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
-## 🎓 Education & Professional Certifications
+</details>
+
+<details>
+<summary><h2>🎓 Education & Professional Certifications</h2></summary>
 
 ### Education & Recent Achievements
 ```mermaid
@@ -196,7 +206,7 @@ timeline
          : Technical Systems Specialization
 ```
 
-## 🎓 Professional Certifications
+### Professional Certifications
 
 ### Development & Programming
 ```mermaid
@@ -223,7 +233,7 @@ graph TB
 - **IFCD0210** - Web Applications Development
 - **IFCD0112** - Object-Oriented Programming and Relational Databases
 - **IFCD0111** - Structured Programming for Business Applications
-- **IFCT0610** - Administration and Programming in Enterprise Resource Planning Systems (ERP) and Customer Relationship Management (CRM)
+- **IFCT0610** - Administration and Programming in ERP and CRM Systems
 
 ### Systems & Infrastructure
 ```mermaid
@@ -315,7 +325,7 @@ mindmap
       Systems Protection
       Service Auditing
 ```
-
+</details>
 ## 🚀 42 Barcelona Projects & Achievements
 
 ### Core Projects Portfolio
@@ -452,7 +462,9 @@ graph TB
     </tr>
   </table>
 </div>
-## 💼 Professional Experience
+
+<details>
+<summary><h2>💼 Professional Experience</h2></summary>
 
 ### NTT DATA (2006 - Present)
 ```mermaid
@@ -501,8 +513,10 @@ timeline
 - Hardware and network technical lead
 - Network installation and maintenance
 - System and printer maintenance
+</details>
 
-## 🌐 Global Impact
+<details>
+<summary><h2>🌐 Global Impact</h2></summary>
 
 <div align="center">
   <table>
@@ -519,6 +533,7 @@ timeline
     </tr>
   </table>
 </div>
+</details>
 
 ## 📈 GitHub Statistics
 
@@ -534,13 +549,17 @@ timeline
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=cescanue&layout=compact&theme=transparent" alt="Top Languages" />
 </div>
 
-## 🌍 Languages
+<details>
+<summary><h2>🌍 Languages</h2></summary>
 
 - 🇪🇸 Spanish (Native)
 - 🇬🇧 English (Professional)
 - 🇪🇸 Catalan (Native)
+</details>
 
-## 🔍 Areas of Expertise
+<details>
+<summary><h2>🔍 Areas of Expertise</h2></summary>
+
 ```mermaid
 mindmap
   root((Expertise))
@@ -561,6 +580,7 @@ mindmap
       Network Protection
       Best Practices
 ```
+</details>
 
 ## 📫 Connect With Me
 
