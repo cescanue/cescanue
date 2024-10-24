@@ -4,51 +4,30 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=3000&pause=1000&color=2E9EF4&center=true&vCenter=true&width=435&lines=IT+Infrastructure+Architect;Global+Team+Leader;Cloud+Solutions+Expert;Full+Stack+Developer;25%2B+Years+of+Innovation" alt="Typing SVG" />
 </div>
 
-I'm **Carlos Escañuela García**, currently serving as **Delivery & Operations Director** at **NTT Managed Services**. With over 25 years of experience orchestrating mission-critical IT operations and leading global teams, I bring a comprehensive approach to technology leadership and innovation.
+I'm **Carlos Escañuela García**, currently serving as **VP of Service Design Architecture** at **NTT DATA**. With over 25 years of experience orchestrating mission-critical IT operations and leading global teams, I bring a comprehensive approach to technology leadership and innovation. My journey is fueled by a commitment to excellence and a desire to continuously learn and adapt in the ever-evolving tech landscape.
 
 ## 🌟 Professional Journey
 
 ```mermaid
 timeline
     title Leadership & Technical Evolution
-    1994 : Started as Systems Engineer
+    1994 : Started as Systems Engineer at Desyman Soft
          : Hardware & Network Specialist
-    1998 : Technical Manager
+    1998 : Technical Manager at Eleven Components
          : Infrastructure Design Lead
     2003 : Support Manager at Aramark
          : Enterprise Solutions Architecture
-    2006 : Joined NTT Managed Services
+    2006 : Technical Operations Director at NTT
          : Global Operations Leadership
-    2020 : Transformation to Global Model
-         : Multi-location Team Management
+    2020 : VP of Service Delivery
+         : Digital Transformation Lead
     2023 : 42 Barcelona Journey
          : Full Stack Development Evolution
+    2024 : VP of Service Design Architecture
+         : Innovation & Architecture Leadership
 ```
 
 ## 🎯 Core Competencies
-
-<table>
-  <tr>
-    <td align="center">
-      <img src="https://skillicons.dev/icons?i=aws,azure,gcp" width="65px" height="65px" alt="Cloud Platforms">
-      <br>Cloud Platforms
-    </td>
-    <td align="center">
-      <img src="https://skillicons.dev/icons?i=docker,kubernetes,terraform" width="65px" height="65px" alt="DevOps">
-      <br>DevOps
-    </td>
-    <td align="center">
-      <img src="https://skillicons.dev/icons?i=c,cpp,python" width="65px" height="65px" alt="Development">
-      <br>Development
-    </td>
-    <td align="center">
-      <img src="https://skillicons.dev/icons?i=linux,bash,vim" width="65px" height="65px" alt="Systems">
-      <br>Systems
-    </td>
-  </tr>
-</table>
-
-## 🚀 Leadership Highlights
 
 ```mermaid
 mindmap
@@ -71,157 +50,7 @@ mindmap
       Technical Architecture
 ```
 
-## 🛠️ Tech Stack
-
-### 🔧 Programming & Development
-
-#### Programming Languages
-![C](https://img.shields.io/badge/C-A8B9CC?style=flat&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white)
-![Java](https://img.shields.io/badge/Java-007396?style=flat&logo=java&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white)
-![Perl](https://img.shields.io/badge/Perl-39457E?style=flat&logo=perl&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnu-bash&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=postgresql&logoColor=white)
-
-#### Frameworks & Tools
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
-![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat&logo=jenkins&logoColor=white)
-![CI/CD](https://img.shields.io/badge/CI%2FCD-4285F4?style=flat&logo=google-cloud&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazon-aws&logoColor=white)
-![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoft-azure&logoColor=white)
-![Google Cloud](https://img.shields.io/badge/Google%20Cloud-4285F4?style=flat&logo=google-cloud&logoColor=white)
-![VMware](https://img.shields.io/badge/VMware-607078?style=flat&logo=vmware&logoColor=white)
-
-### Infrastructure & Systems
-```mermaid
-graph LR
-    A[Cloud Architecture] -->|Implements| B[AWS/Azure/GCP]
-    B --> C[Virtualization]
-    C --> D[Infrastructure]
-    D --> E[Security]
-    style A fill:#3498db
-    style B fill:#2ecc71
-    style C fill:#e74c3c
-    style D fill:#f1c40f
-    style E fill:#9b59b6
-```
-
-## 🎓 Professional Certifications
-
-- IFCT0510 - IT Systems Management
-- IFCT0210 - IT Systems Operation
-- IFCT0509 - Internet Services Administration
-- IFCD0210 - Web Applications Development
-- IFCT0309 - Microcomputer Systems Assembly
-- IFCT0209 - Microcomputer Systems
-
-## 🚀 42 Barcelona Projects
-
-### [tinky-winkey](./tinky-winkey)
-- System utility tool for monitoring and debugging
-- Real-time analysis and user-friendly interface
-- `C++` `System Monitoring` `Debugging`
-
-### [ft_transcendence](./ft_transcendence)
-- Full-stack web application with real-time gaming
-- OAuth integration and live gameplay
-- `TypeScript` `NestJS` `PostgreSQL` `Docker`
-
-### [cpp](./cpp)
-- Advanced C++ programming modules
-- OOP, RAII, polymorphism, and templates
-- `C++` `OOP` `Memory Management`
-
-### [cub3d](./cub3d)
-- 3D game engine using raycasting
-- Dynamic lighting and extended gameplay mechanics
-- `C` `Graphics` `Mathematics`
-
-### [minishell](./minishell)
-- Fully functional Unix-like shell
-- Advanced signal handling and error management
-- `C` `Unix` `Process Management`
-
-### [ft_irc](./ft_irc)
-- IRC server with multithreading support
-- Custom commands and optimized network communication
-- `C++` `Networking` `Multithreading`
-
-### [inception](./inception)
-- Docker-based project with multiple services
-- Focus on scalability and security
-- `Docker` `DevOps` `System Administration`
-
-### [so_long](./so_long)
-- 2D game with dynamic enemies
-- Optimized rendering for smooth animations
-- `C` `Graphics` `Game Development`
-
-### [push_swap](./push_swap)
-- Efficient sorting algorithms implementation
-- Optimized operation count using advanced data structures
-- `C` `Algorithms` `Data Structures`
-
-### [philosophers](./philosophers)
-- Dining philosophers problem solution
-- Focus on concurrency and deadlock prevention
-- `C` `Threading` `Synchronization`
-
-### [pipex](./pipex)
-- Unix pipe functionality recreation
-- Complex command chaining and I/O management
-- `C` `Unix` `Process Management`
-
-### [minitalk](./minitalk)
-- Inter-process communication system
-- Signal-based message transmission
-- `C` `IPC` `Signal Handling`
-
-### [ft_printf](./ft_printf)
-- printf function recreation
-- Support for various custom format specifiers
-- `C` `String Processing` `Variadic Functions`
-
-### [get_next_line](./get_next_line)
-- File reading utility
-- Efficient memory management and edge cases handling
-- `C` `File I/O` `Memory Management`
-
-### [libft](./libft)
-- Custom C standard library
-- Optimized versions of common functions
-- `C` `Library Development` `Data Structures`
-
-### [born2beroot](./born2beroot)
-- System administration project
-- Security configuration and monitoring tools
-- `System Administration` `Security` `Virtualization`
-
-## 🌐 Global Experience
-
-<div align="center">
-  <table>
-    <tr>
-      <td align="center">
-        <img src="https://img.shields.io/badge/Spain-Operations_Hub-red?style=for-the-badge" alt="Spain"/>
-      </td>
-      <td align="center">
-        <img src="https://img.shields.io/badge/India-Development_Center-orange?style=for-the-badge" alt="India"/>
-      </td>
-      <td align="center">
-        <img src="https://img.shields.io/badge/Global-Service_Delivery-blue?style=for-the-badge" alt="Global"/>
-      </td>
-    </tr>
-  </table>
-</div>
-
-## 📈 Achievement Metrics
+## 💼 Professional Impact
 
 <div align="center">
   <table>
@@ -230,28 +59,307 @@ graph LR
         <img src="https://img.shields.io/badge/25+-Years_Experience-blue?style=for-the-badge" alt="Experience"/>
       </td>
       <td align="center">
-        <img src="https://img.shields.io/badge/100+-Global_Team_Members-green?style=for-the-badge" alt="Team Size"/>
+        <img src="https://img.shields.io/badge/Global-Team_Leadership-green?style=for-the-badge" alt="Leadership"/>
       </td>
       <td align="center">
-        <img src="https://img.shields.io/badge/24/7-Service_Delivery-red?style=for-the-badge" alt="Service Availability"/>
+        <img src="https://img.shields.io/badge/Enterprise-Architecture-red?style=for-the-badge" alt="Architecture"/>
       </td>
     </tr>
   </table>
 </div>
 
-## 📈 GitHub Stats
+### Key Responsibilities & Achievements
+- **Global Team Management**: Leading distributed teams across Barcelona, Bangalore, and Hyderabad
+- **Infrastructure Excellence**: Overseeing critical systems including:
+  - Database Management Systems
+  - Enterprise Resource Planning
+  - Network Infrastructure
+  - Security Architecture
+  - Storage Solutions
+  - Virtualization Platforms
+- **Strategic Leadership**:
+  - Budget planning and optimization
+  - Resource allocation and management
+  - Technology roadmap development
+  - Service delivery enhancement
+  - Performance metrics optimization
+- **Innovation Initiatives**:
+  - Digital transformation programs
+  - Process automation and optimization
+  - Architecture modernization
+  - Cloud migration strategies
 
-<p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=cescanue&theme=transparent&hide_border=false&show_icons=true&count_private=true" alt="GitHub Stats">
-</p>
+## 🛠️ Technical Expertise
 
-<p align="center">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=cescanue&theme=transparent&hide_border=false" alt="GitHub Streak">
-</p>
+### Development & Programming
 
-<p align="center">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=cescanue&theme=transparent&hide_border=false&layout=compact" alt="Top Languages">
-</p>
+<div align="center">
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://skillicons.dev/icons?i=c,cpp,python" width="65px" height="65px" alt="Core Languages">
+      <br>System Programming
+    </td>
+    <td align="center">
+      <img src="https://skillicons.dev/icons?i=js,ts,php" width="65px" height="65px" alt="Web Languages">
+      <br>Web Development
+    </td>
+    <td align="center">
+      <img src="https://skillicons.dev/icons?i=java,bash,perl" width="65px" height="65px" alt="Enterprise & Scripting">
+      <br>Enterprise & Scripting
+    </td>
+  </tr>
+</table>
+</div>
+
+### Infrastructure & Cloud Architecture
+
+```mermaid
+graph LR
+    A[Enterprise Architecture] -->|Implements| B[Cloud Platforms]
+    B --> C[Infrastructure]
+    C --> D[Network & Security]
+    D --> E[Service Management]
+    B --> F[AWS/Azure/GCP]
+    C --> G[VMware/Containers]
+    D --> H[Security Controls]
+    style A fill:#3498db
+    style B fill:#2ecc71
+    style C fill:#e74c3c
+    style D fill:#f1c40f
+    style E fill:#9b59b6
+    style F fill:#2980b9
+    style G fill:#27ae60
+    style H fill:#f39c12
+```
+
+### Tools & Technologies
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazon-aws&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoft-azure&logoColor=white)
+![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat&logo=google-cloud&logoColor=white)
+![VMware](https://img.shields.io/badge/VMware-607078?style=flat&logo=vmware&logoColor=white)
+![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat&logo=jenkins&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
+## 🎓 Education & Professional Certifications
+
+### Formal Education & Recent Achievements
+```mermaid
+timeline
+    title Educational Journey
+    2024 : 42 Barcelona Common Core
+         : Full Stack Development
+    2023 : Advanced Systems Administration
+         : Cloud Architecture
+    2003 : Higher Degree in Business Computing
+         : Technical Systems Specialization
+```
+
+### Professional Certifications Path
+
+#### Development & Applications
+```mermaid
+graph LR
+    A[Web Development] -->|IFCD0210| B[Web Technologies]
+    A -->|DAW| C[Web Applications]
+    A -->|DAM| D[Multiplatform Dev]
+    style A fill:#3498db
+    style B fill:#2ecc71
+    style C fill:#e74c3c
+    style D fill:#f1c40f
+```
+
+- **IFCD0210** - Web Application Development (2024)
+- **DAM** - Multiplatform Applications Development (2024)
+- **DAW** - Web Applications Development (2024)
+
+#### Systems & Infrastructure
+```mermaid
+graph LR
+    A[Infrastructure] -->|IFCT0510| B[Systems Management]
+    A -->|IFCT0210| C[Systems Operation]
+    A -->|IFCT0509| D[Internet Services]
+    A -->|ASIX| E[Network Systems]
+    style A fill:#3498db
+    style B fill:#2ecc71
+    style C fill:#e74c3c
+    style D fill:#f1c40f
+    style E fill:#9b59b6
+```
+
+- **IFCT0510** - IT Systems Management (2024)
+- **IFCT0210** - IT Systems Operation (2024)
+- **IFCT0509** - Internet Services Administration (2024)
+- **ASIX** - Network Computer Systems Administration (2023)
+
+#### Security & Microcomputer Systems
+```mermaid
+graph LR
+    A[Security & Systems] -->|Security| B[InfoSec Specialist]
+    A -->|IFCT0309| C[Systems Assembly]
+    A -->|SMX| D[Networks & Systems]
+    style A fill:#3498db
+    style B fill:#2ecc71
+    style C fill:#e74c3c
+    style D fill:#f1c40f
+```
+
+- **Information Security** - IT Security Specialist (2024)
+- **IFCT0309** - Microcomputer Systems Assembly (2024)
+- **SMX** - Microcomputer Systems and Networks (2024)
+
+## 🚀 42 Barcelona Projects & Achievements
+
+### Core Projects Portfolio
+
+#### Advanced System Programming
+- [ft_transcendence](./ft_transcendence) - Full-stack multiplayer game platform
+  - `TypeScript` `NestJS` `PostgreSQL` `Docker` `WebSocket`
+- [webserv](./webserv) - Custom HTTP/1.1 server implementation
+  - `C++` `Network Programming` `HTTP Protocol` `Socket Programming`
+- [ft_containers](./ft_containers) - STL containers implementation
+  - `C++` `Data Structures` `Memory Management` `Templates`
+
+#### System Architecture
+- [inception](./inception) - Multi-service containerized infrastructure
+  - `Docker` `Docker-Compose` `Nginx` `WordPress` `MariaDB`
+- [ft_irc](./ft_irc) - IRC server with advanced features
+  - `C++` `Network Programming` `Multi-threading` `IRC Protocol`
+- [minishell](./minishell) - UNIX shell implementation
+  - `C` `Process Management` `System Calls` `Parser Design`
+
+#### Core Algorithms & Systems
+```mermaid
+graph LR
+    A[Core Projects] -->|Algorithms| B[push_swap]
+    A -->|Concurrency| C[philosophers]
+    A -->|Graphics| D[cub3d]
+    B -->|Sorting| E[Advanced Algorithms]
+    C -->|Threading| F[Synchronization]
+    D -->|Raycasting| G[3D Graphics]
+    style A fill:#3498db
+    style B fill:#2ecc71
+    style C fill:#e74c3c
+    style D fill:#f1c40f
+    style E fill:#9b59b6
+    style F fill:#27ae60
+    style G fill:#f39c12
+```
+
+#### Fundamental Projects
+- [libft](./libft) - Custom C standard library
+  - `C` `Library Development` `Data Structures` `Memory Management`
+- [get_next_line](./get_next_line) - File reading implementation
+  - `C` `File I/O` `Buffer Management` `Static Variables`
+- [ft_printf](./ft_printf) - printf function recreation
+  - `C` `Variadic Functions` `String Formatting` `Buffer Management`
+- [born2beroot](./born2beroot) - System administration
+  - `Virtual Machine` `System Configuration` `Security Hardening`
+
+#### Communication Projects
+- [minitalk](./minitalk) - UNIX signal communication
+  - `C` `Signal Handling` `Binary Communication` `Process Management`
+- [pipex](./pipex) - UNIX pipe mechanism recreation
+  - `C` `Process Management` `File Redirection` `Pipe Implementation`
+
+### Project Metrics
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/badge/20+-Completed_Projects-blue?style=for-the-badge" alt="Projects"/>
+      </td>
+      <td align="center">
+        <img src="https://img.shields.io/badge/1000+-Hours_of_Coding-green?style=for-the-badge" alt="Coding Hours"/>
+      </td>
+      <td align="center">
+        <img src="https://img.shields.io/badge/100+-Technical_Skills-red?style=for-the-badge" alt="Skills"/>
+      </td>
+    </tr>
+  </table>
+</div>
+## 💼 Professional Experience
+
+### NTT DATA (2006 - Present)
+```mermaid
+timeline
+    title Career Evolution at NTT DATA
+    2006 : Technical Operations Director
+         : Infrastructure Management
+    2015 : Service Delivery Leadership
+         : Global Team Management
+    2020 : VP of Service Delivery
+         : Digital Transformation
+    2024 : VP of Service Design Architecture
+         : Innovation Leadership
+```
+
+#### Key Achievements
+- Led digital transformation initiatives across multiple regions
+- Managed distributed teams across Barcelona, Bangalore, and Hyderabad
+- Implemented enterprise-wide infrastructure solutions
+- Established global operational standards and procedures
+- Optimized service delivery processes and metrics
+
+### Previous Experience
+
+#### Aramark (2003 - 2006)
+**Support Manager**
+- Managed local support team and infrastructure
+- Led critical projects:
+  - Domain and server migration (2000 to 2003)
+  - Exchange migration
+  - Citrix implementation (120 sites)
+  - Platform migration to Linux
+- Technologies: Active Directory, Exchange, SQL Server, Citrix, Security Solutions
+
+#### Eleven Components S.L. (1998 - 2003)
+**Technical Manager**
+- Designed and implemented:
+  - TCP/IP networks
+  - InterLan communications
+  - Security policies and systems
+- Server administration and incident management
+- Infrastructure sizing and configuration
+
+#### Desyman Soft S.L. (1994 - 1998)
+**Systems Engineer**
+- Hardware and network technical lead
+- Network installation and maintenance
+- System and printer maintenance
+
+## 🌐 Global Impact
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/badge/Barcelona-Operations_Hub-red?style=for-the-badge" alt="Barcelona"/>
+      </td>
+      <td align="center">
+        <img src="https://img.shields.io/badge/Bangalore-Development_Center-orange?style=for-the-badge" alt="Bangalore"/>
+      </td>
+      <td align="center">
+        <img src="https://img.shields.io/badge/Hyderabad-Technical_Hub-blue?style=for-the-badge" alt="Hyderabad"/>
+      </td>
+    </tr>
+  </table>
+</div>
+
+## 📈 GitHub Statistics
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=cescanue&show_icons=true&theme=transparent" alt="GitHub Stats" />
+</div>
+
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=cescanue&theme=transparent" alt="GitHub Streak" />
+</div>
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=cescanue&layout=compact&theme=transparent" alt="Top Languages" />
+</div>
 
 ## 🌍 Languages
 
@@ -259,19 +367,52 @@ graph LR
 - 🇬🇧 English (Professional)
 - 🇪🇸 Catalan (Native)
 
-## 📫 Let's Connect
+## 🔍 Areas of Expertise
+```mermaid
+mindmap
+  root((Expertise))
+    Enterprise Architecture
+      Cloud Solutions
+      System Design
+      Infrastructure Planning
+    Team Leadership
+      Global Management
+      Resource Optimization
+      Performance Enhancement
+    Technical Innovation
+      Digital Transformation
+      Process Automation
+      Modern Development
+    Security & Compliance
+      System Security
+      Network Protection
+      Best Practices
+```
+
+## 📫 Connect With Me
 
 <div align="center">
   <a href="https://linkedin.com/in/carlos-escañuela-garcia-58b15816">
-    <img height="50" src="https://user-images.githubusercontent.com/46517096/166973395-19676cd8-f8ec-4abf-83ff-da8243505b82.png"/>
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
   <a href="mailto:cescanuela@gmail.com">
-    <img height="50" src="https://user-images.githubusercontent.com/46517096/166974271-91dfa250-d70b-4cb9-8707-f1bda1b708c3.png"/>
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
   </a>
 </div>
+
+## 🤝 Let's Collaborate
+
+I'm always interested in connecting with fellow technology enthusiasts and professionals. Whether you're interested in:
+- Enterprise Architecture
+- Cloud Solutions
+- Digital Transformation
+- Team Leadership
+- Technical Innovation
+
+Feel free to reach out for collaboration or professional discussions!
 
 ---
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=cescanue&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views">
+  <img src="https://komarev.com/ghpvc/?username=cescanue&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views"/>
 </p>
