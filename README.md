@@ -184,7 +184,7 @@ graph LR
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 ## 🎓 Education & Professional Certifications
 
-### Formal Education & Recent Achievements
+### Education & Recent Achievements
 ```mermaid
 timeline
     title Educational Journey
