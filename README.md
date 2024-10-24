@@ -204,9 +204,11 @@ graph TB
     A[Software Development] -->|IFCD0112| B[Object-Oriented Programming]
     A -->|IFCD0111| C[Structured Programming]
     A -->|IFCD0210| D[Web Development]
-    B -->|Specialization| E[Relational Databases]
-    C -->|Focus| F[Business Applications]
-    D -->|Technologies| G[Web Applications]
+    A -->|IFCT0610| E[ERP & CRM Development]
+    B -->|Specialization| F[Relational Databases]
+    C -->|Focus| G[Business Applications]
+    D -->|Technologies| H[Web Applications]
+    E -->|Enterprise| I[Business Systems]
     style A fill:#3498db
     style B fill:#2ecc71
     style C fill:#e74c3c
@@ -214,11 +216,14 @@ graph TB
     style E fill:#9b59b6
     style F fill:#27ae60
     style G fill:#34495e
+    style H fill:#16a085
+    style I fill:#8e44ad
 ```
 
 - **IFCD0210** - Web Applications Development
 - **IFCD0112** - Object-Oriented Programming and Relational Databases
 - **IFCD0111** - Structured Programming for Business Applications
+- **IFCT0610** - Administration and Programming in Enterprise Resource Planning Systems (ERP) and Customer Relationship Management (CRM)
 
 ### Systems & Infrastructure
 ```mermaid
@@ -242,27 +247,22 @@ graph LR
 - **IFCT0309** - Microcomputer Systems Assembly and Repair
 - **IFCT0209** - Microcomputer Systems
 
-### Security & Services
+### Security & Enterprise Systems
 ```mermaid
 graph TB
-    A[Security & Services] -->|IFCT0609| B[IT Security]
+    A[Security & Enterprise] -->|IFCT0609| B[IT Security]
     A -->|IFCT0109| C[Systems Security]
-    A -->|IFCT0610| D[Email Services]
-    B -->|Specialization| E[Security Implementation]
-    C -->|Focus| F[System Protection]
-    D -->|Management| G[Service Auditing]
+    B -->|Specialization| D[Security Implementation]
+    C -->|Focus| E[System Protection]
     style A fill:#3498db
     style B fill:#2ecc71
     style C fill:#e74c3c
     style D fill:#f1c40f
     style E fill:#9b59b6
-    style F fill:#27ae60
-    style G fill:#34495e
 ```
 
 - **IFCT0609** - IT Security
 - **IFCT0109** - Computer Systems Security
-- **IFCT0610** - Email Services Administration and Auditing
 
 ### FPCAT Accreditations
 ```mermaid
