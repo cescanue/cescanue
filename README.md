@@ -318,16 +318,16 @@ timeline
   <table>
     <tr>
       <td align="center">
-        <img src="https://img.shields.io/badge/3-Development_Certifications-blue?style=for-the-badge" alt="Development"/>
+        <img src="https://img.shields.io/badge/4-Development_Certifications-blue?style=for-the-badge" alt="Development"/>
       </td>
       <td align="center">
         <img src="https://img.shields.io/badge/5-Infrastructure_Certifications-green?style=for-the-badge" alt="Infrastructure"/>
       </td>
       <td align="center">
-        <img src="https://img.shields.io/badge/4-Artificial_Intelligence_Certifications-purple?style=for-the-badge" alt="AI"/>
+        <img src="https://img.shields.io/badge/3-Artificial_Intelligence_Certifications-purple?style=for-the-badge" alt="AI"/>
       </td>
       <td align="center">
-        <img src="https://img.shields.io/badge/3-Security_Certifications-red?style=for-the-badge" alt="Security"/>
+        <img src="https://img.shields.io/badge/2-Security_Certifications-red?style=for-the-badge" alt="Security"/>
       </td>
     </tr>
   </table>
