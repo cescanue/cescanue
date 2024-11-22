@@ -199,6 +199,12 @@ timeline
 
 ### Professional Certifications
 
+- TOGAF® 9 Foundation  
+- Gen AI Level-1 Certification  
+- Gen AI Level-2 Certification – Intermediate  
+- Virtual Generative AI – Foundational  
+- Official LITA Course - Lean IT Foundations (LITAF)
+  
 <details>
 <summary>
   <h3>Development & Programming</h3>
