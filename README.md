@@ -313,6 +313,7 @@ timeline
 - **SMX** - Microcomputer Systems and Networks
 
 ### Certification Distribution
+
 <div align="center">
   <table>
     <tr>
@@ -321,6 +322,9 @@ timeline
       </td>
       <td align="center">
         <img src="https://img.shields.io/badge/5-Infrastructure_Certifications-green?style=for-the-badge" alt="Infrastructure"/>
+      </td>
+      <td align="center">
+        <img src="https://img.shields.io/badge/4-Artificial_Intelligence_Certifications-purple?style=for-the-badge" alt="AI"/>
       </td>
       <td align="center">
         <img src="https://img.shields.io/badge/3-Security_Certifications-red?style=for-the-badge" alt="Security"/>
