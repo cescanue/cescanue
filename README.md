@@ -376,6 +376,11 @@ graph LR
 ```
 </details>
 
+- [libasm](./libasm)  
+  - Low-level reimplementation of standard C library functions in assembly  
+  - `Assembly` `System Calls` `Low-level Programming`  
+  - Functions like `strlen`, `strcmp`, `write`, and more  
+
 - [inception](./inception)
   - Docker-based multi-service infrastructure
   - `Docker` `Docker-Compose` `Nginx` `WordPress` `MariaDB`
@@ -419,6 +424,11 @@ graph LR
   - `C++` `System Programming` `Real-time Analysis`
   - Performance monitoring and diagnostics
 
+- [ft_ping](./ft_ping)  
+  - Custom implementation of the `ping` command  
+  - `C` `Networking` `Socket Programming`  
+  - Packet handling, ICMP, and statistics collection  
+
 #### Core Utils Implementation
 <details>
 <summary>
@@ -457,11 +467,16 @@ graph TB
 - [get_next_line](./get_next_line)
   - File reading implementation
   - `C` `File I/O` `Buffer Management`
-
+ 
 - [libft](./libft)
   - Custom C standard library
   - `C` `Data Structures` `Memory Management`
 
+- [libft_malloc](./libft_malloc)  
+  - Dynamic memory allocation library  
+  - `C` `Memory Management` `Multi-threading`  
+  - Implements `malloc`, `free`, and `realloc`
+    
 #### System Administration
 - [born2beroot](./born2beroot)
   - System administration and security
