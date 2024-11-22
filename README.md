@@ -472,7 +472,7 @@ graph TB
   - Custom C standard library
   - `C` `Data Structures` `Memory Management`
 
-- [libft_malloc](./libft_malloc)  
+- [libft_malloc](./malloc)  
   - Dynamic memory allocation library  
   - `C` `Memory Management` `Multi-threading`  
   - Implements `malloc`, `free`, and `realloc`
