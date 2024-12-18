@@ -337,175 +337,54 @@ timeline
 <details>
 <summary>
   <h2>🔬 Personal Projects Portfolio</h2>
-  <i>Click to explore my personal innovation projects</i>
+  <i>Click to explore my innovative solutions</i>
 </summary>
 
-### Claude Advanced Interface Platform
+### 🤖 Claude Advanced Interface Platform
 <div align="center">
+  <p><i>Enterprise-grade AI Interface revolutionizing large-scale document processing</i></p>
+  
   <table>
     <tr>
       <td align="center">
         <img src="https://skillicons.dev/icons?i=nodejs,docker,postgres" width="65px" height="65px" alt="Core Tech">
-        <br>Core Technologies
+        <br>Modern Stack
         <br><small>Node.js • Docker • PostgreSQL</small>
       </td>
-      <td align="center">
-        <img src="https://skillicons.dev/icons?i=ts,express,websocket" width="65px" height="65px" alt="Backend">
-        <br>Backend Stack
-        <br><small>TypeScript • Express • WebSocket</small>
-      </td>
-      <td align="center">
-        <img src="https://skillicons.dev/icons?i=html,css,js" width="65px" height="65px" alt="Frontend">
-        <br>Frontend Stack
-        <br><small>HTML5 • CSS3 • JavaScript</small>
-      </td>
-    </tr>
-  </table>
-</div>
-
-Enterprise-grade web interface for Claude AI that revolutionizes large-scale file processing and AI interactions.
-
-#### Key Components
-- [file-processor](./src/processors) - Advanced file handling system
-  - `Node.js` `Stream Processing` `Multi-format Support`
-  - Handles files up to 200MB
-  - PDF, Word, Excel, and Archive processing
-  - Real-time text extraction
-
-- [api-service](./src/services) - Robust API integration layer
-  - `Express` `WebSocket` `REST API`
-  - Real-time streaming responses
-  - Secure API communication
-  - Rate limiting and error handling
-
-- [database-layer](./src/database) - Persistent storage system
-  - `PostgreSQL` `JSONB` `Connection Pooling`
-  - Conversation history management
-  - Efficient query optimization
-  - Data persistence and backup
-
-#### System Architecture
-<details>
-<summary>
-  <h4>Architecture Overview</h4>
-  <i>Click to view system design</i>
-</summary>
-
-```mermaid
-graph TB
-    A[Client Interface] -->|HTTP/WebSocket| B[API Gateway]
-    B --> C[File Processing]
-    B --> D[Claude AI Service]
-    B --> E[Database Layer]
-    
-    C -->|Processed Data| D
-    D -->|Responses| E
-    E -->|Persistence| F[(PostgreSQL)]
-    
-    style A fill:#3498db,stroke:#2980b9
-    style B fill:#2ecc71,stroke:#27ae60
-    style C,D fill:#e74c3c,stroke:#c0392b
-    style E fill:#f1c40f,stroke:#d35400
-    style F fill:#9b59b6,stroke:#8e44ad
-```
-</details>
-
-#### Implementation Highlights
-
-```javascript
-// Advanced File Processing System
-class FileProcessor {
-    async process(file) {
-        const processor = this.getProcessor(file.type);
-        const chunks = await this.streamFile(file);
-        
-        return await processor.processChunks(chunks, {
-            maxSize: '200MB',
-            optimization: true,
-            validation: true
-        });
-    }
-}
-
-// Real-time Communication Handler
-class StreamHandler {
-    constructor(webSocket) {
-        this.ws = webSocket;
-        this.buffer = new StreamBuffer();
-    }
-
-    async handleStream(response) {
-        for await (const chunk of response) {
-            this.buffer.add(chunk);
-            await this.ws.send(this.buffer.flush());
-        }
-    }
-}
-
-// Database Integration Layer
-class DatabaseService {
-    async saveConversation(id, messages) {
-        const client = await this.pool.connect();
-        try {
-            await client.query('BEGIN');
-            await this.executeTransaction(client, id, messages);
-            await client.query('COMMIT');
-        } catch (error) {
-            await client.query('ROLLBACK');
-            throw new DatabaseError(error);
-        } finally {
-            client.release();
-        }
-    }
-}
-```
-
-#### Performance Metrics
-<div align="center">
-  <table>
-    <tr>
       <td align="center">
         <img src="https://img.shields.io/badge/200MB-File_Processing-blue?style=for-the-badge" alt="Processing"/>
       </td>
       <td align="center">
-        <img src="https://img.shields.io/badge/<100ms-Response_Time-green?style=for-the-badge" alt="Response"/>
-      </td>
-      <td align="center">
-        <img src="https://img.shields.io/badge/99.9%25-Uptime-purple?style=for-the-badge" alt="Uptime"/>
+        <img src="https://img.shields.io/badge/Enterprise-Ready-green?style=for-the-badge" alt="Status"/>
       </td>
     </tr>
   </table>
-</div>
 
-#### Deployment Configuration
-```yaml
-services:
-  api:
-    build: 
-      context: ./api
-      target: production
-    environment:
-      NODE_ENV: production
-      DB_HOST: ${DB_HOST}
-    volumes:
-      - ./logs:/app/logs
-    depends_on:
-      - db
-
-  db:
-    image: postgres:latest
-    volumes:
-      - pgdata:/var/lib/postgresql/data
-    environment:
-      POSTGRES_PASSWORD: ${DB_PASSWORD}
-
-volumes:
-  pgdata:
+```mermaid
+graph LR
+    A[Files] -->|Process| B[Interface]
+    B -->|AI Analysis| C[Claude]
+    C -->|Real-time| D[Results]
+    style A fill:#3498db
+    style B fill:#2ecc71
+    style C fill:#9b59b6
+    style D fill:#e74c3c
 ```
 
-[View Project](https://github.com/cescanue/Claude-interface)
+  ### Key Features
+  - 📄 Process documents up to 200MB (PDF, Word, Excel, Archives)
+  - ⚡ Real-time streaming responses
+  - 🔒 Enterprise-grade security
+  - 🚀 Production-ready Docker deployment
+  - 💾 Persistent conversation storage
 
----
+  <div align="center">
+    <a href="https://github.com/cescanue/Claude-interface">
+      <img src="https://img.shields.io/badge/View_Full_Project-GitHub-181717?style=for-the-badge&logo=github" alt="GitHub"/>
+    </a>
+  </div>
+</div>
+
 </details>
   
 <details>
