@@ -508,7 +508,11 @@ volumes:
 ---
 </details>
   
-## 🚀 42 Barcelona Projects & Achievements
+<details>
+<summary>
+  <h2>🚀 42 Barcelona Projects & Achievements</h2>
+  <i>Click to explore my academic projects at 42 Barcelona</i>
+</summary>
 
 ### Core Projects Portfolio
 
@@ -656,7 +660,7 @@ graph TB
   - System administration and security
   - `Virtual Machine` `System Configuration`
   - Security hardening and monitoring
-
+ 
 ### Achievement Metrics
 <div align="center">
   <table>
@@ -673,6 +677,8 @@ graph TB
     </tr>
   </table>
 </div>
+
+</details>
 
 <details>
 <summary>
