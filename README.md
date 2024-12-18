@@ -334,190 +334,172 @@ timeline
 </div>
 </details>
 
-## 🔬 Personal Innovation Lab
+## 🔬 Personal Projects Portfolio
 
+### Claude Advanced Interface Platform
 <div align="center">
-  <h2>🤖 Claude Advanced Interface Platform</h2>
-  <p><i>Elevating AI Interactions to Enterprise Excellence</i></p>
-
   <table>
     <tr>
       <td align="center">
-        <img src="https://img.shields.io/badge/Built_With-Enterprise_Architecture-2D3748?style=for-the-badge" alt="Enterprise Architecture"/>
+        <img src="https://skillicons.dev/icons?i=nodejs,docker,postgres" width="65px" height="65px" alt="Core Tech">
+        <br>Core Technologies
+        <br><small>Node.js • Docker • PostgreSQL</small>
       </td>
       <td align="center">
-        <img src="https://img.shields.io/badge/Powered_By-Claude_AI-5A67D8?style=for-the-badge" alt="Claude AI"/>
+        <img src="https://skillicons.dev/icons?i=ts,express,websocket" width="65px" height="65px" alt="Backend">
+        <br>Backend Stack
+        <br><small>TypeScript • Express • WebSocket</small>
       </td>
       <td align="center">
-        <img src="https://img.shields.io/badge/Status-Production_Ready-38A169?style=for-the-badge" alt="Status"/>
+        <img src="https://skillicons.dev/icons?i=html,css,js" width="65px" height="65px" alt="Frontend">
+        <br>Frontend Stack
+        <br><small>HTML5 • CSS3 • JavaScript</small>
       </td>
     </tr>
   </table>
-
-  <div>
-    <img src="https://img.shields.io/badge/Docker-Ready-2496ED?style=flat-square&logo=docker" alt="Docker"/>
-    <img src="https://img.shields.io/badge/PostgreSQL-Database-336791?style=flat-square&logo=postgresql" alt="PostgreSQL"/>
-    <img src="https://img.shields.io/badge/Node.js-Runtime-339933?style=flat-square&logo=node.js" alt="Node.js"/>
-    <img src="https://img.shields.io/badge/API-RESTful-FF6C37?style=flat-square&logo=postman" alt="API"/>
-    <img src="https://img.shields.io/badge/Security-Enterprise_Grade-E31B23?style=flat-square&logo=shield" alt="Security"/>
-  </div>
 </div>
 
+Enterprise-grade web interface for Claude AI that revolutionizes large-scale file processing and AI interactions.
+
+#### Key Components
+- [file-processor](./src/processors) - Advanced file handling system
+  - `Node.js` `Stream Processing` `Multi-format Support`
+  - Handles files up to 200MB
+  - PDF, Word, Excel, and Archive processing
+  - Real-time text extraction
+
+- [api-service](./src/services) - Robust API integration layer
+  - `Express` `WebSocket` `REST API`
+  - Real-time streaming responses
+  - Secure API communication
+  - Rate limiting and error handling
+
+- [database-layer](./src/database) - Persistent storage system
+  - `PostgreSQL` `JSONB` `Connection Pooling`
+  - Conversation history management
+  - Efficient query optimization
+  - Data persistence and backup
+
+#### System Architecture
 <details>
 <summary>
-  <h3>🎯 Platform Overview</h3>
-  <i>Click to explore the innovation behind the platform</i>
+  <h4>Architecture Overview</h4>
+  <i>Click to view system design</i>
 </summary>
 
 ```mermaid
 graph TB
-    A[Claude Interface] --> B[File Processing Engine]
-    A --> C[Real-time Communication]
-    A --> D[Enterprise Storage]
-    A --> E[Security Layer]
+    A[Client Interface] -->|HTTP/WebSocket| B[API Gateway]
+    B --> C[File Processing]
+    B --> D[Claude AI Service]
+    B --> E[Database Layer]
     
-    B --> F[PDF Processing]
-    B --> G[Document Handling]
-    B --> H[Archive Management]
-    
-    C --> I[Stream Processing]
-    C --> J[WebSocket Integration]
-    
-    D --> K[PostgreSQL]
-    D --> L[Data Persistence]
-    
-    E --> M[API Security]
-    E --> N[Data Protection]
+    C -->|Processed Data| D
+    D -->|Responses| E
+    E -->|Persistence| F[(PostgreSQL)]
     
     style A fill:#3498db,stroke:#2980b9
-    style B,C,D,E fill:#2ecc71,stroke:#27ae60
-    style F,G,H,I,J,K,L,M,N fill:#e74c3c,stroke:#c0392b
+    style B fill:#2ecc71,stroke:#27ae60
+    style C,D fill:#e74c3c,stroke:#c0392b
+    style E fill:#f1c40f,stroke:#d35400
+    style F fill:#9b59b6,stroke:#8e44ad
 ```
-
-### 🌟 Innovative Features
-
-<table>
-  <tr>
-    <td align="center">
-      <h4>🔄 Intelligent Processing</h4>
-      <ul>
-        <li>200MB File Support</li>
-        <li>Multi-format Handling</li>
-        <li>Real-time Extraction</li>
-      </ul>
-    </td>
-    <td align="center">
-      <h4>🛡️ Enterprise Security</h4>
-      <ul>
-        <li>API Authentication</li>
-        <li>Data Encryption</li>
-        <li>Access Control</li>
-      </ul>
-    </td>
-    <td align="center">
-      <h4>⚡ Performance</h4>
-      <ul>
-        <li>Stream Processing</li>
-        <li>Optimized Storage</li>
-        <li>Fast Response Times</li>
-      </ul>
-    </td>
-  </tr>
-</table>
 </details>
 
-<details>
-<summary>
-  <h3>🛠️ Technical Architecture</h3>
-  <i>Click to view the engineering excellence</i>
-</summary>
+#### Implementation Highlights
 
-```mermaid
-mindmap
-  root((Technical Stack))
-    Frontend Excellence
-      Real-time Updates
-      Responsive Design
-      Interactive Console
-      File Management UI
-    Backend Power
-      Node.js Runtime
-      REST API Design
-      WebSocket Server
-      Stream Processing
-    Data Architecture
-      PostgreSQL
-      JSONB Storage
-      Query Optimization
-      Data Persistence
-    DevOps Integration
-      Docker Containers
-      Easy Deployment
-      Scalability
-      Monitoring
+```javascript
+// Advanced File Processing System
+class FileProcessor {
+    async process(file) {
+        const processor = this.getProcessor(file.type);
+        const chunks = await this.streamFile(file);
+        
+        return await processor.processChunks(chunks, {
+            maxSize: '200MB',
+            optimization: true,
+            validation: true
+        });
+    }
+}
+
+// Real-time Communication Handler
+class StreamHandler {
+    constructor(webSocket) {
+        this.ws = webSocket;
+        this.buffer = new StreamBuffer();
+    }
+
+    async handleStream(response) {
+        for await (const chunk of response) {
+            this.buffer.add(chunk);
+            await this.ws.send(this.buffer.flush());
+        }
+    }
+}
+
+// Database Integration Layer
+class DatabaseService {
+    async saveConversation(id, messages) {
+        const client = await this.pool.connect();
+        try {
+            await client.query('BEGIN');
+            await this.executeTransaction(client, id, messages);
+            await client.query('COMMIT');
+        } catch (error) {
+            await client.query('ROLLBACK');
+            throw new DatabaseError(error);
+        } finally {
+            client.release();
+        }
+    }
+}
 ```
 
-### 💻 Core Technologies
-
+#### Performance Metrics
 <div align="center">
   <table>
     <tr>
       <td align="center">
-        <img src="https://skillicons.dev/icons?i=nodejs" width="48" height="48" alt="Node.js"/>
-        <br>Node.js
+        <img src="https://img.shields.io/badge/200MB-File_Processing-blue?style=for-the-badge" alt="Processing"/>
       </td>
       <td align="center">
-        <img src="https://skillicons.dev/icons?i=postgres" width="48" height="48" alt="PostgreSQL"/>
-        <br>PostgreSQL
+        <img src="https://img.shields.io/badge/<100ms-Response_Time-green?style=for-the-badge" alt="Response"/>
       </td>
       <td align="center">
-        <img src="https://skillicons.dev/icons?i=docker" width="48" height="48" alt="Docker"/>
-        <br>Docker
-      </td>
-      <td align="center">
-        <img src="https://skillicons.dev/icons?i=express" width="48" height="48" alt="Express"/>
-        <br>Express
-      </td>
-    </tr>
-  </table>
-</div>
-</details>
-
-<details>
-<summary>
-  <h3>🚀 Performance Metrics</h3>
-  <i>Click to view platform capabilities</i>
-</summary>
-
-<div align="center">
-  <table>
-    <tr>
-      <td align="center">
-        <img src="https://img.shields.io/badge/File_Processing-200MB_Max-blue?style=for-the-badge" alt="File Processing"/>
-      </td>
-      <td align="center">
-        <img src="https://img.shields.io/badge/Response_Time-<100ms-green?style=for-the-badge" alt="Response Time"/>
-      </td>
-      <td align="center">
-        <img src="https://img.shields.io/badge/Uptime-99.9%25-purple?style=for-the-badge" alt="Uptime"/>
+        <img src="https://img.shields.io/badge/99.9%25-Uptime-purple?style=for-the-badge" alt="Uptime"/>
       </td>
     </tr>
   </table>
 </div>
 
-### 📊 Performance Highlights
-- **Rapid Processing**: Handles large files with optimized algorithms
-- **Real-time Streaming**: Instant response streaming for better UX
-- **Efficient Storage**: Optimized PostgreSQL storage with JSONB
-- **Scalable Architecture**: Docker-based deployment for easy scaling
-</details>
+#### Deployment Configuration
+```yaml
+services:
+  api:
+    build: 
+      context: ./api
+      target: production
+    environment:
+      NODE_ENV: production
+      DB_HOST: ${DB_HOST}
+    volumes:
+      - ./logs:/app/logs
+    depends_on:
+      - db
 
-<div align="center">
-  <h3>🔗 Quick Access</h3>
-  <a href="https://github.com/cescanue/Claude-interface">
-    <img src="https://img.shields.io/badge/View_Project-GitHub-181717?style=for-the-badge&logo=github" alt="GitHub"/>
-  </a>
-</div>
+  db:
+    image: postgres:latest
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+
+volumes:
+  pgdata:
+```
+
+[View Project](https://github.com/cescanue/Claude-interface)
 
 ---
 
