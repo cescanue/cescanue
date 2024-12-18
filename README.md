@@ -334,7 +334,11 @@ timeline
 </div>
 </details>
 
-## 🔬 Personal Projects Portfolio
+<details>
+<summary>
+  <h2>🔬 Personal Projects Portfolio</h2>
+  <i>Click to explore my personal innovation projects</i>
+</summary>
 
 ### Claude Advanced Interface Platform
 <div align="center">
@@ -502,7 +506,8 @@ volumes:
 [View Project](https://github.com/cescanue/Claude-interface)
 
 ---
-
+</details>
+  
 ## 🚀 42 Barcelona Projects & Achievements
 
 ### Core Projects Portfolio
