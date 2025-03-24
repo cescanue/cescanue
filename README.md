@@ -4,8 +4,30 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=3000&pause=1000&color=2E9EF4&center=true&vCenter=true&width=435&lines=IT+Infrastructure+Architect;Global+Team+Leader;Cloud+Solutions+Expert;Full+Stack+Developer;25%2B+Years+of+Innovation" alt="Typing SVG" />
 </div>
 
-I'm **Carlos Escañuela García**, currently serving as **VP of Service Design Architecture** at **NTT DATA**. With over 25 years of experience orchestrating mission-critical IT operations and leading global teams, I bring a comprehensive approach to technology leadership and innovation. My journey is fueled by a commitment to excellence and a desire to continuously learn and adapt in the ever-evolving tech landscape.
+## ✨ NEW: AIHubMatrix - Your Universal AI Interface ✨
 
+<div align="center">
+  <h3>🚀 <a href="https://www.aihubmatrix.com">Try the LIVE DEMO now!</a> 🚀</h3>
+  <p><strong>Switch between AI models MID-CONVERSATION!</strong></p>
+  <img src="https://raw.githubusercontent.com/cescanue/aihubmatrix/main/images/main-interface.png" alt="AIHubMatrix Interface" width="600" />
+</div>
+
+### Experience the future of AI interaction:
+- 🔄 **Dynamic Model Switching** - Ask GPT-4o a question, then get Claude's perspective in the same thread
+- 🎛️ **Ultimate Conversation Control** - Choose exactly what context the AI sees
+- 👁️ **Universal Vision** - Every model can analyze images, even text-only ones
+- 📁 **Folder Organization** - Manage your work with a familiar file system structure
+- 🔌 **Resilient Connections** - Processing continues even if your connection drops
+
+<div align="center">
+  <a href="https://github.com/cescanue/aihubmatrix">
+    <img src="https://img.shields.io/badge/View_on_GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  </a>
+</div>
+
+---
+
+I'm **Carlos Escañuela García**, currently serving as **VP of Service Design Architecture** at **NTT DATA**. With over 25 years of experience orchestrating mission-critical IT operations and leading global teams, I bring a comprehensive approach to technology leadership and innovation. My journey is fueled by a commitment to excellence and a desire to continuously learn and adapt in the ever-evolving tech landscape.
 
 # 🌟 Professional Journey
 
@@ -339,6 +361,55 @@ timeline
   <h2>🔬 Personal Projects Portfolio</h2>
   <i>Click to explore my innovative solutions</i>
 </summary>
+
+### 🌐 AIHubMatrix - Universal AI Interface
+<div align="center">
+  <p><i>The ultimate interface for seamless interaction with any AI model</i></p>
+  
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://skillicons.dev/icons?i=react,nodejs,postgres" width="65px" height="65px" alt="Core Tech">
+        <br>Modern Stack
+        <br><small>React • Node.js • PostgreSQL</small>
+      </td>
+      <td align="center">
+        <img src="https://img.shields.io/badge/Multiple-AI_Providers-blue?style=for-the-badge" alt="AI Support"/>
+      </td>
+      <td align="center">
+        <img src="https://img.shields.io/badge/Production-Ready-green?style=for-the-badge" alt="Status"/>
+      </td>
+    </tr>
+  </table>
+
+```mermaid
+graph LR
+    A[User] -->|Request| B[Interface]
+    B -->|API Calls| C[Multiple AI Providers]
+    C -->|Responses| D[Unified Experience]
+    style A fill:#3498db
+    style B fill:#2ecc71
+    style C fill:#9b59b6
+    style D fill:#e74c3c
+```
+
+  ### Key Features
+  - 🔄 **Dynamic Model Switching** - Switch AI models mid-conversation
+  - 🎛️ **Conversation Control** - Fine-grained control over conversation context
+  - 👁️ **Universal Vision** - Vision capabilities for all models
+  - 📁 **Folder Organization** - Hierarchical organization for conversations
+  - 🔌 **Resilient Connections** - Processing continues even if connection drops
+  - 💾 **Conversation Cache** - Pre-load context and files for specific conversations
+
+  <div align="center">
+    <a href="https://github.com/cescanue/aihubmatrix">
+      <img src="https://img.shields.io/badge/View_Full_Project-GitHub-181717?style=for-the-badge&logo=github" alt="GitHub"/>
+    </a>
+    <a href="https://www.aihubmatrix.com">
+      <img src="https://img.shields.io/badge/Try_Live_Demo-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Live Demo"/>
+    </a>
+  </div>
+</div>
 
 ### 🤖 Claude Advanced Interface Platform
 <div align="center">
